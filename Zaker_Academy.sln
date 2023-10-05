@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaker_Academy", "Zaker_Academy\Zaker_Academy.csproj", "{D218502C-F5F8-46FB-AC87-3FE25132836F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zaker_Academy", "Zaker_Academy\Zaker_Academy.csproj", "{D218502C-F5F8-46FB-AC87-3FE25132836F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaker_Academy.core", "Zaker_Academy.core\Zaker_Academy.core.csproj", "{A4E0964E-AF2A-41CF-8545-6A0B256545CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaker_Academy.infrastructure", "Zaker_Academy.infrastructure\Zaker_Academy.infrastructure.csproj", "{49EB8CEE-74D1-4B9E-B5BF-E79561280A42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D218502C-F5F8-46FB-AC87-3FE25132836F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D218502C-F5F8-46FB-AC87-3FE25132836F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D218502C-F5F8-46FB-AC87-3FE25132836F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E0964E-AF2A-41CF-8545-6A0B256545CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E0964E-AF2A-41CF-8545-6A0B256545CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E0964E-AF2A-41CF-8545-6A0B256545CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E0964E-AF2A-41CF-8545-6A0B256545CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EB8CEE-74D1-4B9E-B5BF-E79561280A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EB8CEE-74D1-4B9E-B5BF-E79561280A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EB8CEE-74D1-4B9E-B5BF-E79561280A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EB8CEE-74D1-4B9E-B5BF-E79561280A42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
