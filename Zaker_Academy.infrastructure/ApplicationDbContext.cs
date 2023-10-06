@@ -19,7 +19,17 @@ namespace Zaker_Academy.infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Code to seed data
+            modelBuilder.Entity<Student>().HasMany(s => s.Courses)
+             .WithMany(c => c.Students)
+             .UsingEntity<EnrollmentCourses>("EnrollmentCourses",
+             j => j.HasOne(i => i.Course).WithMany().HasForeignKey(j => j.CourseId),
+             i => i.HasOne(i => i.Student).WithMany().HasForeignKey(j => j.StudentId),
+             k =>
+             {
+                 k.HasKey(k => new { k.StudentId, k.CourseId });
+                 k.Property(k => k.EnrolmentDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
+             }
+             );
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -37,5 +47,6 @@ namespace Zaker_Academy.infrastructure
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentQuizScore> studentQuizScores { get; set; }
+        public DbSet<EnrollmentCourses> EnrollmentCourses { get; set; }
     }
 }
