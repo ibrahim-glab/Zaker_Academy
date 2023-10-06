@@ -1,0 +1,14 @@
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.deps.json
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.runtimeconfig.json
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.AssemblyReference.cache
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.AssemblyInfoInputs.cache
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.AssemblyInfo.cs
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.CoreCompileInputs.cache
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\refint\Zaker_Academy.infrastructure.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.genruntimeconfig.cache
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\ref\Zaker_Academy.infrastructure.dll

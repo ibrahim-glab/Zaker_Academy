@@ -24,20 +24,14 @@ namespace Zaker_Academy.infrastructure.Entities
         [MaxLength(255)]
         public string imageURL { get; set; }
 
-        [MaxLength(1000)]
-        public string AboutMe { get; set; }
-
         public DateTime LastLogin { get; set; }
 
         [MaxLength(20)]
-        public string AccountStatus { get; set; }
-
         public DateTime LastProfileUpdate { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
         // Navigation property for related entities (e.g., courses, messages, etc.)
-        //  public ICollection<Course> Courses { get; set; }
 
         //public ICollection<Message> Messages { get; set; }
     }
