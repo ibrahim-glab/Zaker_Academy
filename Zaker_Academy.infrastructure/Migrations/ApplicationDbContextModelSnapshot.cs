@@ -173,7 +173,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("categories");
+                    b.ToTable("categories", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
@@ -242,7 +242,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("InstructorId1");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
@@ -280,7 +280,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("CourseId");
 
-                    b.ToTable("Lessons");
+                    b.ToTable("Lessons", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.QuestionOptions", b =>
@@ -305,7 +305,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("QuestionId");
 
-                    b.ToTable("QuestionOptions");
+                    b.ToTable("QuestionOptions", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Quiz", b =>
@@ -331,7 +331,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("LessonId");
 
-                    b.ToTable("Quizzes");
+                    b.ToTable("Quizzes", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.QuizeQuestion", b =>
@@ -353,7 +353,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("QuizId");
 
-                    b.ToTable("QuizQuestions");
+                    b.ToTable("QuizQuestions", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Review", b =>
@@ -386,7 +386,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Reviews", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.StudentQuizScore", b =>
@@ -415,7 +415,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("studentId");
 
-                    b.ToTable("studentQuizScores");
+                    b.ToTable("studentQuizScores", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.applicationUser", b =>

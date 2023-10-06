@@ -11,7 +11,7 @@ namespace Zaker_Academy.infrastructure.Entities
     public class Course
     {
         [Key]
-        public int Id { get; set; }
+        public int CourseId { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -42,10 +42,8 @@ namespace Zaker_Academy.infrastructure.Entities
 
         public Category? Category { get; set; }
 
-        //  public Category category { get; set; }
-
         public ICollection<Lesson> Lessons { get; set; } // Represents the lessons/modules within the course
-        public ICollection<Student>? Students { get; set; } // Represents the students enrolled in the course
+        public ICollection<Student> Students { get; set; } // Represents the lessons/modules within the course
 
         public ICollection<Review>? Reviews { get; set; } // Represents reviews and ratings for the course
         // Add more navigation properties as needed

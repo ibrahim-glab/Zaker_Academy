@@ -8,6 +8,6 @@ namespace Zaker_Academy.infrastructure.Entities
 {
     public class Student : applicationUser
     {
-        private ICollection<Course> Courses { get; set; }
+        public ICollection<Course> Courses { get; set; }
     }
 }
