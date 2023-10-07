@@ -84,7 +84,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

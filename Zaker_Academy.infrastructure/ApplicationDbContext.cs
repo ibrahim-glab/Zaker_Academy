@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zaker_Academy.infrastructure.Configurations;
 using Zaker_Academy.infrastructure.Entities;
 
 namespace Zaker_Academy.infrastructure
@@ -18,18 +19,7 @@ namespace Zaker_Academy.infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Student>().HasMany(s => s.Courses)
-             .WithMany(c => c.Students)
-             .UsingEntity<EnrollmentCourses>("EnrollmentCourses",
-             j => j.HasOne(i => i.Course).WithMany().HasForeignKey(j => j.CourseId),
-             i => i.HasOne(i => i.Student).WithMany().HasForeignKey(j => j.StudentId),
-             k =>
-             {
-                 k.HasKey(k => new { k.StudentId, k.CourseId });
-                 k.Property(k => k.EnrolmentDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
-             }
-             );
+            modelBuilder.ApplyConfiguration(new StudentConfigration());
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

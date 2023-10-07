@@ -12,3 +12,6 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Deb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.genruntimeconfig.cache
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\ref\Zaker_Academy.infrastructure.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.core.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.core.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.CopyComplete

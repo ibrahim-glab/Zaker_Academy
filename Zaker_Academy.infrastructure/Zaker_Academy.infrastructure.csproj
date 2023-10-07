@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Zaker_Academy.core\Zaker_Academy.core.csproj" />
+  </ItemGroup>
+
 </Project>
