@@ -66,18 +66,10 @@ namespace Zaker_Academy.infrastructure.Repository
             return result != null;
         }
 
-        public async Task<T?> GetByIdAsync(object id)
+        public async Task<T> GetByIdAsync(object id)
         {
-            try
-            {
-                var result = await _context.Set<T>().FindAsync(id);
-                return result;
-            }
-            catch (Exception e)
-            {
-                //log them in the future
-            }
-            return null;
+            T? t = await _context.Set<T>().FindAsync(id);
+            return t;
         }
 
         public async Task<IEnumerable<T>> GetPagedAsync(Expression<Func<T, bool>> condition, int pageNumber, int pageSize, Expression<Func<T, object>> orderBy, bool ascending = true)

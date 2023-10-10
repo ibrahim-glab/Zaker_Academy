@@ -199,6 +199,35 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.ToTable("categories");
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("applicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
                 {
                     b.Property<int>("CourseId")
@@ -377,6 +406,35 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasIndex("QuizId");
 
                     b.ToTable("QuizQuestions");
+                });
+
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Reply", b =>
+                {
+                    b.Property<int>("ReplyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReplyId"));
+
+                    b.Property<int>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("applicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ReplyId");
+
+                    b.HasIndex("CommentId");
+
+                    b.ToTable("Replies");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Review", b =>
@@ -641,6 +699,15 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Comment", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Course", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Category", "Category")
@@ -700,6 +767,15 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("Quiz");
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Reply", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Comment", null)
+                        .WithMany("Replies")
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Review", b =>
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Course", null)
@@ -735,8 +811,15 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasForeignKey("InstructorId");
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Comment", b =>
+                {
+                    b.Navigation("Replies");
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Lessons");
 
                     b.Navigation("Reviews");

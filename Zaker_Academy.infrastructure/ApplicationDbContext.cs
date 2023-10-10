@@ -16,15 +16,26 @@ namespace Zaker_Academy.infrastructure
         {
         }
 
+        protected ApplicationDbContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new StudentConfigration());
+            modelBuilder.Entity<Comment>().HasMany(s => s.Replies).WithOne().HasForeignKey(f => f.applicationUserId).HasForeignKey(f => f.CommentId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne().HasForeignKey(f => f.CourseId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
+        }
+
+        internal Task<object> FindAsync(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public DbSet<Category> categories { get; set; }
@@ -38,5 +49,7 @@ namespace Zaker_Academy.infrastructure
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentQuizScore> studentQuizScores { get; set; }
         public DbSet<EnrollmentCourses> EnrollmentCourses { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
     }
 }

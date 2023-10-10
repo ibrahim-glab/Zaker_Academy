@@ -25,7 +25,8 @@ builder.Services.AddIdentity<Instructor, IdentityRole>().AddEntityFrameworkStore
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+//builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddServices();
 
 var app = builder.Build();
 
