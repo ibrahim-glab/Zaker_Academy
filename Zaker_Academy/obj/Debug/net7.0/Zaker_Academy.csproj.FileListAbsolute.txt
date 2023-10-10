@@ -89,3 +89,6 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\refin
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.genruntimeconfig.cache
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Zaker_Academy.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
