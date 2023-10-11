@@ -22,6 +22,8 @@ namespace Zaker_Academy.infrastructure.Repository
         public IGenericRepository<QuizeQuestion> QuizeQuestionRepository { get; private set; }
         public IGenericRepository<Reply> ReplyRepository { get; private set; }
         public IGenericRepository<StudentQuizScore> StudentQuizScoreRepository { get; private set; }
+        public IGenericRepository<Instructor> InstructorRepository { get; private set; }
+        public IGenericRepository<Student> StudentRepository { get; private set; }
 
         public UnitOfWork(ApplicationDbContext context)
         {
@@ -35,6 +37,8 @@ namespace Zaker_Academy.infrastructure.Repository
             ReplyRepository = new GenericRepository<Reply>(_context);
             StudentQuizScoreRepository = new GenericRepository<StudentQuizScore>(_context);
             QuizRepository = new GenericRepository<Quiz>(_context);
+            InstructorRepository = new GenericRepository<Instructor>(_context);
+            StudentRepository = new GenericRepository<Student>(_context);
         }
     }
 }

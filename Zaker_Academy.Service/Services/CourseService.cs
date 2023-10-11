@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +16,13 @@ namespace Zaker_Academy.Service.Services
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly UserStore<Instructor> instructorStore;
+        private readonly IMapper mapper;
 
-        public CourseService(IUnitOfWork unitOfWork, UserStore<Instructor> userStore)
+        public CourseService(IUnitOfWork unitOfWork, UserStore<Instructor> userStore, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             instructorStore = userStore;
+            this.mapper = mapper;
         }
 
         public async Task<bool> CreateCourse(CourseCreationDTO course)
@@ -26,13 +30,22 @@ namespace Zaker_Academy.Service.Services
             if (course == null)
                 return false;
 
-            Category category = await unitOfWork.CategoryRepository.GetByIdAsync(course.CategoryId);
+            var category = await unitOfWork.CategoryRepository.GetByIdAsync(course.CategoryId);
             if (category == null)
                 return false;
             Instructor? instructor = await instructorStore.FindByIdAsync(course.InstructorId);
             if (instructor == null)
                 return false;
-            Course Course = new Course();
+            Course Course = mapper.Map<Course>(course);
+            try
+            {
+                await unitOfWork.CourseRepository.Add(Course);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
             return true;
         }
     }

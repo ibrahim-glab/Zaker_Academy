@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iDS21HdkG+Qa1pM3Qs7Ddp6uuWJAintCDPrsiomHvy5PMIoncYDdaahu9f83+bhvPYYyLEqmr91EMma8ZlT0Ew==",
+  "dgSpecHash": "Gj41Xo424COMDR0Cj48BPPEvJhJneUlvqlt2tf2dG9zgBZdQRUXV2TCYnOfdWxj5/sluy1dpd486wQ6yNAmRKw==",
   "success": true,
   "projectFilePath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\glabh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\glabh\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\glabh\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\glabh\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\glabh\\.nuget\\packages\\azure.security.keyvault.certificates\\4.1.0\\azure.security.keyvault.certificates.4.1.0.nupkg.sha512",

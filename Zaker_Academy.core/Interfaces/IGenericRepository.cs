@@ -10,6 +10,8 @@ namespace Zaker_Academy.core.Interfaces
 
         Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition);
 
+        Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null);
+
         Task<IEnumerable<T>> GetPagedAsync(
     Expression<Func<T, bool>> condition,
     int pageNumber,
@@ -29,6 +31,6 @@ namespace Zaker_Academy.core.Interfaces
 
         Task Delete(T entity);
 
-        Task<T> GetByIdAsync(object id);
+        Task<T?> GetByIdAsync(int id);
     }
 }

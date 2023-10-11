@@ -92,3 +92,4 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Z
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

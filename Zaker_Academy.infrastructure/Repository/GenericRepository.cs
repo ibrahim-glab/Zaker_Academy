@@ -66,7 +66,7 @@ namespace Zaker_Academy.infrastructure.Repository
             return result != null;
         }
 
-        public async Task<T> GetByIdAsync(object id)
+        public async Task<T?> GetByIdAsync(object id)
         {
             T? t = await _context.Set<T>().FindAsync(id);
             return t;
@@ -119,6 +119,26 @@ namespace Zaker_Academy.infrastructure.Repository
         {
             _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null)
+        {
+            IQueryable<T> res = _context.Set<T>();
+
+            if (relatedEntities != null)
+            {
+                foreach (var related in relatedEntities)
+                {
+                    res = res.Include(related);
+                }
+            }
+
+            return await res.Where(condition).ToListAsync();
+        }
+
+        public async Task<T?> GetByIdAsync(int id)
+        {
+            return await _context.Set<T>().FindAsync(id);
         }
     }
 }

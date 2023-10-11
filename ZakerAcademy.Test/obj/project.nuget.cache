@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jXmhHssEwnDt+O60KFlau0l6tZEEnfiVq73HbPoSCyCMsrXC2IwpS8bUpuCLsX+vtOgtoYmfQfsWqGfqwE9yNA==",
+  "success": true,
+  "projectFilePath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\ZakerAcademy.Test\\ZakerAcademy.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glabh\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -19,5 +19,7 @@ namespace Zaker_Academy.core.Interfaces
         public IGenericRepository<QuizeQuestion> QuizeQuestionRepository { get; }
         public IGenericRepository<Reply> ReplyRepository { get; }
         public IGenericRepository<StudentQuizScore> StudentQuizScoreRepository { get; }
+        public IGenericRepository<Instructor> InstructorRepository { get; }
+        public IGenericRepository<Student> StudentRepository { get; }
     }
 }
