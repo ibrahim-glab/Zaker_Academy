@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
+using Zaker_Academy.Service.Interfaces;
 
 namespace Zaker_Academy.Service.Services
 {
-    public class CourseService
+    public class CourseService : ICourseService
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly UserStore<Instructor> instructorStore;
@@ -25,7 +26,7 @@ namespace Zaker_Academy.Service.Services
             this.mapper = mapper;
         }
 
-        public async Task<bool> CreateCourse(CourseCreationDTO course)
+        public async Task<bool> Create(CourseCreationDTO course)
         {
             if (course == null)
                 return false;
