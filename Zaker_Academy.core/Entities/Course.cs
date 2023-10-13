@@ -34,9 +34,6 @@ namespace Zaker_Academy.infrastructure.Entities
 
         public DateTime UpdatedAt { get; set; }
 
-        [Required]
-        public string InstructorId { get; set; }
-
         // Navigation properties
         public Instructor Instructor { get; set; }
 

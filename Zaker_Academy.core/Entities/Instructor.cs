@@ -10,10 +10,10 @@ namespace Zaker_Academy.infrastructure.Entities
     public class Instructor : applicationUser
     {
         [MaxLength(1000)]
-        public string AboutMe { get; set; }
+        public string? AboutMe { get; set; }
 
         public ICollection<Student>? Students { get; set; }
-        public ICollection<Course>? instructorCourses { get; set; }
+        public ICollection<Course>? Courses { get; set; }
         public ICollection<Review>? Reviews { get; set; }
     }
 }

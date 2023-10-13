@@ -30,7 +30,6 @@ namespace Zaker_Academy.Test
         public void CourseService_Create_ReturnValidData()
 
         {
-            ICourseService courseService = new(new StoreMock())
             // Assert
             Assert.True(true);
         }

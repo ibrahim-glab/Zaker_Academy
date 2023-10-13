@@ -13,14 +13,15 @@ namespace Zaker_Academy.infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Student> builder)
         {
+            builder.ToTable("Students");
             builder.HasMany(s => s.Courses)
              .WithMany(c => c.Students)
              .UsingEntity<EnrollmentCourses>("EnrollmentCourses",
              j => j.HasOne(i => i.Course).WithMany().HasForeignKey(j => j.CourseId),
-             i => i.HasOne(i => i.Student).WithMany().HasForeignKey(j => j.StudentId),
+             i => i.HasOne(i => i.Student).WithMany().HasForeignKey(j => j.StudentId).OnDelete(DeleteBehavior.NoAction),
              k =>
              {
-                 k.HasKey(k => new { k.StudentId, k.CourseId });
+                 k.HasKey(k => k.id);
                  k.Property(k => k.EnrolmentDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
              }
              );

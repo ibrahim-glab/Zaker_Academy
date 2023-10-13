@@ -22,7 +22,7 @@ namespace Zaker_Academy.infrastructure.Entities
         public string Gender { get; set; }
 
         [MaxLength(255)]
-        public string imageURL { get; set; }
+        public string? imageURL { get; set; }
 
         public DateTime LastLogin { get; set; }
 

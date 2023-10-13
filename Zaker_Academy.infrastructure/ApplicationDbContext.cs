@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,9 +24,12 @@ namespace Zaker_Academy.infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
             modelBuilder.ApplyConfiguration(new StudentConfigration());
+            modelBuilder.ApplyConfiguration(new instructorConfig());
             modelBuilder.Entity<Comment>().HasMany(s => s.Replies).WithOne().HasForeignKey(f => f.applicationUserId).HasForeignKey(f => f.CommentId).OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne().HasForeignKey(f => f.CourseId);
+            modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne().HasForeignKey(f => f.CourseId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Course>().HasOne(c => c.Instructor).WithMany(i => i.Courses);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

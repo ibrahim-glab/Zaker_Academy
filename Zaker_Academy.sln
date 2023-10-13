@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zaker_Academy.infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zaker_Academy.Service", "Zaker_Academy.Service\Zaker_Academy.Service.csproj", "{688A081D-50F8-483F-B7C4-FA6D12DD4BB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakerAcademy.UnitTests", "ZakerAcademy.UnitTests\ZakerAcademy.UnitTests.csproj", "{B82E8581-BEF7-4A99-A6E4-AB639934CD6D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaker_Academy.Test", "Zaker_Academy.Test\Zaker_Academy.Test.csproj", "{842A9755-1D5C-41D3-968F-09937B369140}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zaker_Academy.Test", "Zaker_Academy.Test\Zaker_Academy.Test.csproj", "{842A9755-1D5C-41D3-968F-09937B369140}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +35,6 @@ Global
 		{688A081D-50F8-483F-B7C4-FA6D12DD4BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{688A081D-50F8-483F-B7C4-FA6D12DD4BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{688A081D-50F8-483F-B7C4-FA6D12DD4BB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B82E8581-BEF7-4A99-A6E4-AB639934CD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B82E8581-BEF7-4A99-A6E4-AB639934CD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B82E8581-BEF7-4A99-A6E4-AB639934CD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B82E8581-BEF7-4A99-A6E4-AB639934CD6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{842A9755-1D5C-41D3-968F-09937B369140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{842A9755-1D5C-41D3-968F-09937B369140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{842A9755-1D5C-41D3-968F-09937B369140}.Release|Any CPU.ActiveCfg = Release|Any CPU

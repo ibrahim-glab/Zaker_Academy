@@ -7,6 +7,7 @@ using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.infrastructure.Repository;
+using Zaker_Academy.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +20,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
-builder.Services.AddIdentity<Student, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddIdentity<Instructor, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<applicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddServices();
+builder.Services.Services();
 
 var app = builder.Build();
 

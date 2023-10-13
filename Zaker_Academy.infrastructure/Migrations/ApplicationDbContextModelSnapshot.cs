@@ -24,23 +24,32 @@ namespace Zaker_Academy.infrastructure.Migrations
 
             modelBuilder.Entity("EnrollmentCourses", b =>
                 {
-                    b.Property<string>("StudentId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("CourseId")
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
                     b.Property<bool>("CompleteIt")
                         .HasColumnType("bit");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("EnrolmentDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                    b.HasKey("StudentId", "CourseId");
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("id");
 
                     b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
 
                     b.ToTable("EnrollmentCourses");
                 });
@@ -247,10 +256,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<int>("InstructorId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("InstructorId1")
+                    b.Property<string>("InstructorId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Title")
@@ -292,7 +299,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("Categoryid");
 
-                    b.HasIndex("InstructorId1");
+                    b.HasIndex("InstructorId");
 
                     b.ToTable("Courses");
                 });
@@ -517,10 +524,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -600,9 +603,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.ToTable("AspNetUsers", (string)null);
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("applicationUser");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTptMappingStrategy();
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Instructor", b =>
@@ -614,7 +615,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.HasDiscriminator().HasValue("Instructor");
+                    b.ToTable("Instructors", (string)null);
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Student", b =>
@@ -626,7 +627,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.HasDiscriminator().HasValue("Student");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("EnrollmentCourses", b =>
@@ -640,7 +641,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Student", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -715,8 +716,10 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasForeignKey("Categoryid");
 
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Instructor", "Instructor")
-                        .WithMany("instructorCourses")
-                        .HasForeignKey("InstructorId1");
+                        .WithMany("Courses")
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Category");
 
@@ -804,8 +807,23 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("student");
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Instructor", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", null)
+                        .WithOne()
+                        .HasForeignKey("Zaker_Academy.infrastructure.Entities.Instructor", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Student", b =>
                 {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", null)
+                        .WithOne()
+                        .HasForeignKey("Zaker_Academy.infrastructure.Entities.Student", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Instructor", null)
                         .WithMany("Students")
                         .HasForeignKey("InstructorId");
@@ -832,11 +850,11 @@ namespace Zaker_Academy.infrastructure.Migrations
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Instructor", b =>
                 {
+                    b.Navigation("Courses");
+
                     b.Navigation("Reviews");
 
                     b.Navigation("Students");
-
-                    b.Navigation("instructorCourses");
                 });
 #pragma warning restore 612, 618
         }
