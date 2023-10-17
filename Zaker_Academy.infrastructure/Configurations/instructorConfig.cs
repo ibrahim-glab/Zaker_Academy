@@ -13,7 +13,6 @@ namespace Zaker_Academy.infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Instructor> builder)
         {
-            builder.ToTable("Instructors");
             builder.HasMany(i => i.Courses).WithOne(c => c.Instructor);
         }
     }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +41,17 @@ namespace Zaker_Academy.infrastructure.Repository
             QuizRepository = new GenericRepository<Quiz>(_context);
             InstructorRepository = new GenericRepository<Instructor>(_context);
             StudentRepository = new GenericRepository<Student>(_context);
+        }
+
+        public IDbTransaction BeginTransaction()
+        {
+            var transaction = _context.Database.BeginTransaction();
+            return transaction.GetDbTransaction();
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

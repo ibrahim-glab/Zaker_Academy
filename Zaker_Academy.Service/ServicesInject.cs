@@ -16,7 +16,7 @@ namespace Zaker_Academy.Service
         public static IServiceCollection Services(this IServiceCollection services)
         {
             // Register your custom services here
-            services.AddTransient(typeof(IUserService), typeof(UserService));
+            services.AddTransient(typeof(IUserService<>), typeof(UserService<>));
             return services;
         }
     }

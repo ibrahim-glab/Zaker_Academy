@@ -20,7 +20,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
-builder.Services.AddIdentity<applicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentityCore<Student>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentityCore<Instructor>().AddEntityFrameworkStores<ApplicationDbContext>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

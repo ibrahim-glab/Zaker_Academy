@@ -13,7 +13,6 @@ namespace Zaker_Academy.infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Student> builder)
         {
-            builder.ToTable("Students");
             builder.HasMany(s => s.Courses)
              .WithMany(c => c.Students)
              .UsingEntity<EnrollmentCourses>("EnrollmentCourses",

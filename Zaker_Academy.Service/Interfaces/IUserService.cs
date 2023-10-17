@@ -9,7 +9,7 @@ using Zaker_Academy.Service.ErrorHandling;
 
 namespace Zaker_Academy.Service.Interfaces
 {
-    public interface IUserService
+    public interface IUserService<T> where T : class
     {
         Task<ServiceResult> Register(UserCreationDto user);
 

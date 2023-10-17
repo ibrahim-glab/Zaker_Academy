@@ -14,13 +14,14 @@ using Zaker_Academy.Service.Interfaces;
 
 namespace Zaker_Academy.Service.Services
 {
-    public class UserService : IUserService
+    public class UserService<T> : IUserService<T> where T : class
     {
         private readonly IMapper _Mapper;
-        private readonly UserManager<applicationUser> userManager;
+
+        private readonly UserManager<T> userManager;
         private readonly IUnitOfWork unitOfWork;
 
-        public UserService(IMapper mapper, UserManager<applicationUser> userManger, IUnitOfWork work)
+        public UserService(IMapper mapper, UserManager<T> userManger, IUnitOfWork work)
         {
             _Mapper = mapper;
             this.userManager = userManger;
@@ -35,7 +36,7 @@ namespace Zaker_Academy.Service.Services
         public async Task<ServiceResult> Register(UserCreationDto user)
         {
             ServiceResult serviceResult = new ServiceResult();
-            applicationUser User = _Mapper.Map<applicationUser>(user);
+            T User = _Mapper.Map<T>(user);
             if (await userManager.FindByEmailAsync(user.Email) is not null)
             {
                 serviceResult.Message = "Registration Filled";
@@ -48,30 +49,31 @@ namespace Zaker_Academy.Service.Services
                 serviceResult.Details = $"{user.UserName} is already Exist!";
                 return serviceResult;
             }
-
+            using var transaction = unitOfWork.BeginTransaction();
             try
             {
                 IdentityResult res = await userManager.CreateAsync(User, user.Password);
                 if (!res.Succeeded)
                 {
-                    serviceResult.Message = "Registration Filled";
                     foreach (var err in res.Errors)
                     {
-                        serviceResult.Details += $"{err.Description} \n";
+                        serviceResult.Details += $" {err.Description} , ";
                     }
-                    return serviceResult;
+                    throw new Exception(message: serviceResult.Details);
                 }
-                await userManager.AddToRoleAsync(User, user.Role);
-                if (user.Role == "Instructor")
+
+                if (!(string.Equals(user.Role, "instructor", StringComparison.CurrentCultureIgnoreCase) || string.Equals(user.Role, "student", StringComparison.CurrentCultureIgnoreCase)))
                 {
-                    await unitOfWork.InstructorRepository.Add((Instructor)User);
+                    throw new Exception(message: "Invalid Role ");
                 }
+                transaction.Commit();
                 serviceResult.succeeded = true;
                 return serviceResult;
             }
             catch (Exception e)
             {
-                serviceResult.Message = "Registration Filled";
+                transaction.Rollback();
+                serviceResult.Message = e.Message;
                 serviceResult.Details = "Internal Server Error";
                 return serviceResult;
             }

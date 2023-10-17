@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +22,9 @@ namespace Zaker_Academy.core.Interfaces
         public IGenericRepository<StudentQuizScore> StudentQuizScoreRepository { get; }
         public IGenericRepository<Instructor> InstructorRepository { get; }
         public IGenericRepository<Student> StudentRepository { get; }
+
+        IDbTransaction BeginTransaction();
+
+        Task SaveChangesAsync();
     }
 }

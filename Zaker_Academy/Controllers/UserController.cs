@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 using Zaker_Academy.Service.Interfaces;
@@ -10,9 +11,9 @@ namespace Zaker_Academy.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IUserService<Student> _userService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService<Student> userService)
         {
             _userService = userService;
         }

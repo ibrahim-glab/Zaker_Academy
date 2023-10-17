@@ -107,7 +107,6 @@ namespace Zaker_Academy.infrastructure.Repository
         async Task IGenericRepository<T>.Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
         }
 
         async Task<IEnumerable<T>> IGenericRepository<T>.GetAll()
@@ -118,7 +117,6 @@ namespace Zaker_Academy.infrastructure.Repository
         async Task IGenericRepository<T>.Update(T entity)
         {
             _context.Set<T>().Update(entity);
-            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null)
