@@ -19,12 +19,14 @@ namespace Zaker_Academy.Service.Services
         private readonly IMapper _Mapper;
 
         private readonly UserManager<T> userManager;
+        private readonly UserManager<applicationUser> appusermanager;
         private readonly IUnitOfWork unitOfWork;
 
-        public UserService(IMapper mapper, UserManager<T> userManger, IUnitOfWork work)
+        public UserService(IMapper mapper, UserManager<T> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work)
         {
             _Mapper = mapper;
-            this.userManager = userManger;
+            this.appusermanager = appusermanager;
+            this.userManager = userManager;
             unitOfWork = work;
         }
 
@@ -36,14 +38,14 @@ namespace Zaker_Academy.Service.Services
         public async Task<ServiceResult> Register(UserCreationDto user)
         {
             ServiceResult serviceResult = new ServiceResult();
-            T User = _Mapper.Map<T>(user);
-            if (await userManager.FindByEmailAsync(user.Email) is not null)
+            var User = _Mapper.Map<T>(user);
+            if (await appusermanager.FindByEmailAsync(user.Email) is not null)
             {
                 serviceResult.Message = "Registration Filled";
                 serviceResult.Details = $"{user.Email} is already Register!";
                 return serviceResult;
             }
-            if (await userManager.FindByNameAsync(user.UserName) is not null)
+            if (await appusermanager.FindByNameAsync(user.UserName) is not null)
             {
                 serviceResult.Message = "Registration Filled";
                 serviceResult.Details = $"{user.UserName} is already Exist!";
@@ -61,11 +63,7 @@ namespace Zaker_Academy.Service.Services
                     }
                     throw new Exception(message: serviceResult.Details);
                 }
-
-                if (!(string.Equals(user.Role, "instructor", StringComparison.CurrentCultureIgnoreCase) || string.Equals(user.Role, "student", StringComparison.CurrentCultureIgnoreCase)))
-                {
-                    throw new Exception(message: "Invalid Role ");
-                }
+                await userManager.AddToRoleAsync(User, user.Role);
                 transaction.Commit();
                 serviceResult.succeeded = true;
                 return serviceResult;

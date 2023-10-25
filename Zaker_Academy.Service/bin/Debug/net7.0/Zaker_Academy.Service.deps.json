@@ -9,6 +9,7 @@
       "Zaker_Academy.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Zaker_Academy.core": "1.0.0",
           "Zaker_Academy.infrastructure": "1.0.0"
         },
         "runtime": {

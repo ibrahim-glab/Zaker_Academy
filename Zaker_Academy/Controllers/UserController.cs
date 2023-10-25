@@ -11,11 +11,13 @@ namespace Zaker_Academy.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserService<Student> _userService;
+        private readonly IInstructorService instructorService;
+        private readonly IStudentService studentService;
 
-        public UserController(IUserService<Student> userService)
+        public UserController(IInstructorService instructorService, IStudentService studentService)
         {
-            _userService = userService;
+            this.instructorService = instructorService;
+            this.studentService = studentService;
         }
 
         [HttpPost]
@@ -28,7 +30,18 @@ namespace Zaker_Academy.Controllers
 
             try
             {
-                ServiceResult result = await _userService.Register(user);
+                if (!(string.Equals(user.Role, "instructor", StringComparison.CurrentCultureIgnoreCase) || string.Equals(user.Role, "student", StringComparison.CurrentCultureIgnoreCase)))
+                    throw new Exception(message: "Invalid Role ");
+                ServiceResult result = new ServiceResult();
+                if (string.Equals(user.Role, "instructor", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    result = await instructorService.Register(user);
+                }
+                else
+                {
+                    result = await studentService.Register(user);
+                }
+
                 if (!result.succeeded)
                     return BadRequest(result);
                 return Ok(result);

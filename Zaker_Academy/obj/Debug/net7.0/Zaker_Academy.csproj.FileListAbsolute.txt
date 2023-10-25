@@ -5,11 +5,14 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.runtimeconfig.json
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Core.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Identity.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Certificates.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Secrets.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Humanizer.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\JWT.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -40,6 +43,7 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Micro
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Mono.TextTemplating.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Newtonsoft.Json.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -66,8 +70,10 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runti
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.AssemblyReference.cache
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.AssemblyInfoInputs.cache
@@ -89,7 +95,3 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\refin
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.genruntimeconfig.cache
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Zaker_Academy.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

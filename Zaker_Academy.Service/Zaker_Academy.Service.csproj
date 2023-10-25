@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Zaker_Academy.core\Zaker_Academy.core.csproj" />
     <ProjectReference Include="..\Zaker_Academy.infrastructure\Zaker_Academy.infrastructure.csproj" />
   </ItemGroup>
 

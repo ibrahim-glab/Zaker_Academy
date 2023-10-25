@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Zaker_Academy.infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class man : Migration
+    public partial class aaaa : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -34,10 +34,13 @@ namespace Zaker_Academy.infrastructure.Migrations
                     LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Gender = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    imageURL = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    imageURL = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     LastLogin = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastProfileUpdate = table.Column<DateTime>(type: "datetime2", maxLength: 20, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AboutMe = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
+                    InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -56,6 +59,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_AspNetUsers_InstructorId",
+                        column: x => x.InstructorId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -179,24 +187,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Instructors",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    AboutMe = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Instructors", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Instructors_AspNetUsers_Id",
-                        column: x => x.Id,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
                 {
@@ -221,9 +211,9 @@ namespace Zaker_Academy.infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Courses", x => x.CourseId);
                     table.ForeignKey(
-                        name: "FK_Courses_Instructors_InstructorId",
+                        name: "FK_Courses_AspNetUsers_InstructorId",
                         column: x => x.InstructorId,
-                        principalTable: "Instructors",
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -231,29 +221,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                         column: x => x.Categoryid,
                         principalTable: "categories",
                         principalColumn: "id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Students",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Students", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Students_AspNetUsers_Id",
-                        column: x => x.Id,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Students_Instructors_InstructorId",
-                        column: x => x.InstructorId,
-                        principalTable: "Instructors",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -272,6 +239,33 @@ namespace Zaker_Academy.infrastructure.Migrations
                     table.PrimaryKey("PK_Comments", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Comments_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EnrollmentCourses",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    EnrolmentDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP"),
+                    CompleteIt = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EnrollmentCourses", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_EnrollmentCourses_AspNetUsers_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_EnrollmentCourses_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
@@ -318,42 +312,15 @@ namespace Zaker_Academy.infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Reviews", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Reviews_AspNetUsers_InstructorId",
+                        column: x => x.InstructorId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_Reviews_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId");
-                    table.ForeignKey(
-                        name: "FK_Reviews_Instructors_InstructorId",
-                        column: x => x.InstructorId,
-                        principalTable: "Instructors",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "EnrollmentCourses",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    EnrolmentDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP"),
-                    CompleteIt = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EnrollmentCourses", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_EnrollmentCourses_Courses_CourseId",
-                        column: x => x.CourseId,
-                        principalTable: "Courses",
-                        principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_EnrollmentCourses_Students_StudentId",
-                        column: x => x.StudentId,
-                        principalTable: "Students",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -434,16 +401,16 @@ namespace Zaker_Academy.infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_studentQuizScores", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_studentQuizScores_AspNetUsers_studentId",
+                        column: x => x.studentId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_studentQuizScores_Quizzes_QuizId",
                         column: x => x.QuizId,
                         principalTable: "Quizzes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_studentQuizScores_Students_studentId",
-                        column: x => x.studentId,
-                        principalTable: "Students",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -498,6 +465,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "EmailIndex",
                 table: "AspNetUsers",
                 column: "NormalizedEmail");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_InstructorId",
+                table: "AspNetUsers",
+                column: "InstructorId");
 
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
@@ -575,11 +547,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "IX_studentQuizScores_studentId",
                 table: "studentQuizScores",
                 column: "studentId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Students_InstructorId",
-                table: "Students",
-                column: "InstructorId");
         }
 
         /// <inheritdoc />
@@ -625,9 +592,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "Comments");
 
             migrationBuilder.DropTable(
-                name: "Students");
-
-            migrationBuilder.DropTable(
                 name: "Quizzes");
 
             migrationBuilder.DropTable(
@@ -637,13 +601,10 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "Courses");
 
             migrationBuilder.DropTable(
-                name: "Instructors");
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "categories");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
         }
     }
 }

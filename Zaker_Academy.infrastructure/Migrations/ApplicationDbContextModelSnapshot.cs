@@ -755,7 +755,7 @@ namespace Zaker_Academy.infrastructure.Migrations
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Quiz", b =>
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Lesson", "Lesson")
-                        .WithMany()
+                        .WithMany("Quizzes")
                         .HasForeignKey("LessonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -830,6 +830,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("Lessons");
 
                     b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
+                {
+                    b.Navigation("Quizzes");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Quiz", b =>

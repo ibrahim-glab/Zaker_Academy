@@ -2752,6 +2752,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Zaker_Academy.core": "1.0.0",
           "Zaker_Academy.infrastructure": "1.0.0"
         },
         "compile": {
@@ -8150,7 +8151,6 @@
       "Moq >= 4.20.69",
       "Zaker_Academy.Service >= 1.0.0",
       "Zaker_Academy.core >= 1.0.0",
-      "Zaker_Academy.infrastructure >= 1.0.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
@@ -8186,9 +8186,6 @@
           "projectReferences": {
             "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
               "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
-            },
-            "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
-              "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
             },
             "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
               "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj"

@@ -12,8 +12,8 @@ using Zaker_Academy.infrastructure;
 namespace Zaker_Academy.infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231014030011_LAS")]
-    partial class LAS
+    [Migration("20231018024449_aaaa")]
+    partial class aaaa
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -12,7 +12,6 @@
           "Moq": "4.20.69",
           "Zaker_Academy.Service": "1.0.0",
           "Zaker_Academy.core": "1.0.0",
-          "Zaker_Academy.infrastructure": "1.0.0",
           "coverlet.collector": "3.2.0",
           "xunit": "2.4.2",
           "xunit.runner.visualstudio": "2.4.5"
@@ -1648,6 +1647,7 @@
       "Zaker_Academy.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Zaker_Academy.core": "1.0.0",
           "Zaker_Academy.infrastructure": "1.0.0"
         },
         "runtime": {
