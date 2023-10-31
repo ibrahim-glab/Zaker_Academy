@@ -10,21 +10,22 @@ namespace Zaker_Academy.core.Interfaces
 {
     public interface IUnitOfWork
     {
-        public IGenericRepository<Category> CategoryRepository { get; }
-        public IGenericRepository<Comment> CommentRepository { get; }
-        public IGenericRepository<Course> CourseRepository { get; }
-        public IGenericRepository<EnrollmentCourses> EnrollmentCoursesRepository { get; }
-        public IGenericRepository<Lesson> LessonRepository { get; }
-        public IGenericRepository<QuestionOptions> QuestionOptionsRepository { get; }
-        public IGenericRepository<Quiz> QuizRepository { get; }
-        public IGenericRepository<QuizeQuestion> QuizeQuestionRepository { get; }
-        public IGenericRepository<Reply> ReplyRepository { get; }
-        public IGenericRepository<StudentQuizScore> StudentQuizScoreRepository { get; }
-        public IGenericRepository<Instructor> InstructorRepository { get; }
-        public IGenericRepository<Student> StudentRepository { get; }
+        public ICategoryRepository CategoryRepository { get; }
+        public ICommentRepository CommentRepository { get; }
+        public ICourseRepository CourseRepository { get; }
+        public IEnrollmentCoursesRepository EnrollmentCoursesRepository { get; }
+        public ILessonRepository LessonRepository { get; }
+        public IQuestionOptionRepository QuestionOptionsRepository { get; }
+        public IQuizRepository QuizRepository { get; }
+        public IQuizQuestionRepository QuizeQuestionRepository { get; }
+        public IReplyRepository ReplyRepository { get; }
+        public IStudentQuizScoreRepository StudentQuizScoreRepository { get; }
+        public IInstructorRepository InstructorRepository { get; }
+        public IStudentRepository StudentRepository { get; }
+        public IReviewRepository ReviewRepository { get; }
 
         IDbTransaction BeginTransaction();
 
-        Task SaveChangesAsync();
+        Task SaveChanges();
     }
 }

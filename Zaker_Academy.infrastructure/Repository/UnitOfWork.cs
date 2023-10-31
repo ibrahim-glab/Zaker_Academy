@@ -14,33 +14,36 @@ namespace Zaker_Academy.infrastructure.Repository
     {
         private readonly ApplicationDbContext _context;
 
-        public IGenericRepository<Category> CategoryRepository { get; private set; }
-        public IGenericRepository<Comment> CommentRepository { get; private set; }
-        public IGenericRepository<Course> CourseRepository { get; private set; }
-        public IGenericRepository<EnrollmentCourses> EnrollmentCoursesRepository { get; private set; }
-        public IGenericRepository<Lesson> LessonRepository { get; private set; }
-        public IGenericRepository<QuestionOptions> QuestionOptionsRepository { get; private set; }
-        public IGenericRepository<Quiz> QuizRepository { get; private set; }
-        public IGenericRepository<QuizeQuestion> QuizeQuestionRepository { get; private set; }
-        public IGenericRepository<Reply> ReplyRepository { get; private set; }
-        public IGenericRepository<StudentQuizScore> StudentQuizScoreRepository { get; private set; }
-        public IGenericRepository<Instructor> InstructorRepository { get; private set; }
-        public IGenericRepository<Student> StudentRepository { get; private set; }
+        public ICategoryRepository CategoryRepository { get; private set; }
+        public ICommentRepository CommentRepository { get; private set; }
+        public ICourseRepository CourseRepository { get; private set; }
+        public IEnrollmentCoursesRepository EnrollmentCoursesRepository { get; private set; }
+        public ILessonRepository LessonRepository { get; private set; }
+        public IQuestionOptionRepository QuestionOptionsRepository { get; private set; }
+        public IQuizRepository QuizRepository { get; private set; }
+        public IQuizQuestionRepository QuizeQuestionRepository { get; private set; }
+        public IReplyRepository ReplyRepository { get; private set; }
+        public IStudentQuizScoreRepository StudentQuizScoreRepository { get; private set; }
+        public IInstructorRepository InstructorRepository { get; private set; }
+        public IStudentRepository StudentRepository { get; private set; }
+        public IReviewRepository ReviewRepository { get; private set; }
 
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
-            CategoryRepository = new GenericRepository<Category>(_context);
-            CommentRepository = new GenericRepository<Comment>(_context);
-            EnrollmentCoursesRepository = new GenericRepository<EnrollmentCourses>(_context);
-            LessonRepository = new GenericRepository<Lesson>(_context);
-            QuestionOptionsRepository = new GenericRepository<QuestionOptions>(_context);
-            QuizeQuestionRepository = new GenericRepository<QuizeQuestion>(_context);
-            ReplyRepository = new GenericRepository<Reply>(_context);
-            StudentQuizScoreRepository = new GenericRepository<StudentQuizScore>(_context);
-            QuizRepository = new GenericRepository<Quiz>(_context);
-            InstructorRepository = new GenericRepository<Instructor>(_context);
-            StudentRepository = new GenericRepository<Student>(_context);
+            CategoryRepository = new CategoryRepository(_context);
+            CommentRepository = new CommentRepository(_context);
+            CourseRepository = new CourseRepository(_context);
+            EnrollmentCoursesRepository = new EnrollmentCoursesRepository(_context);
+            LessonRepository = new LessonRepository(_context);
+            QuestionOptionsRepository = new QuestionOptionRepository(_context);
+            QuizeQuestionRepository = new QuizQuestionRepository(_context);
+            ReplyRepository = new ReplyRepository(_context);
+            StudentQuizScoreRepository = new StudentQuizScoreRepository(_context);
+            QuizRepository = new QuizRepository(_context);
+            InstructorRepository = new InstructorRepository(_context);
+            StudentRepository = new StudentRepository(_context);
+            ReviewRepository = new ReviewRepository(_context);
         }
 
         public IDbTransaction BeginTransaction()
@@ -49,7 +52,7 @@ namespace Zaker_Academy.infrastructure.Repository
             return transaction.GetDbTransaction();
         }
 
-        public async Task SaveChangesAsync()
+        public async Task SaveChanges()
         {
             await _context.SaveChangesAsync();
         }
