@@ -13,7 +13,7 @@ namespace Zaker_Academy.Service.Services
 {
     public class StudentService : UserService<Student>, IStudentService
     {
-        public StudentService(IMapper mapper, UserManager<Student> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work) : base(mapper, userManager, appusermanager, work)
+        public StudentService(IMapper mapper, UserManager<Student> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work, IAuthorizationService authorizationService) : base(mapper, userManager, appusermanager, work, authorizationService)
         {
         }
     }

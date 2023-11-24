@@ -21,13 +21,15 @@ namespace Zaker_Academy.Service.Services
         private readonly UserManager<T> userManager;
         private readonly UserManager<applicationUser> appusermanager;
         private readonly IUnitOfWork unitOfWork;
+        private readonly IAuthorizationService authorizationService;
 
-        public UserService(IMapper mapper, UserManager<T> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work)
+        public UserService(IMapper mapper, UserManager<T> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work, IAuthorizationService authorizationService)
         {
             _Mapper = mapper;
             this.appusermanager = appusermanager;
             this.userManager = userManager;
             unitOfWork = work;
+            this.authorizationService = authorizationService;
         }
 
         public Task<IdentityResult> Login()
@@ -63,9 +65,11 @@ namespace Zaker_Academy.Service.Services
                     }
                     throw new Exception(message: serviceResult.Details);
                 }
+
                 await userManager.AddToRoleAsync(User, user.Role);
+                serviceResult = await authorizationService.CreateToken(user.UserName);
+                serviceResult.Message = "Registration Succeeded";
                 transaction.Commit();
-                serviceResult.succeeded = true;
                 return serviceResult;
             }
             catch (Exception e)

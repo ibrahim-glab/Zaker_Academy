@@ -14,7 +14,7 @@ namespace Zaker_Academy.Service.Services
     public class InstructorService : UserService<Instructor>, IInstructorService
 
     {
-        public InstructorService(IMapper mapper, UserManager<Instructor> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work) : base(mapper, userManager, appusermanager, work)
+        public InstructorService(IMapper mapper, UserManager<Instructor> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work, IAuthorizationService authorizationService) : base(mapper, userManager, appusermanager, work, authorizationService)
         {
         }
     }

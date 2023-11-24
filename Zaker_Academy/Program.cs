@@ -29,7 +29,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidIssuer = builder.Configuration["JWT:Issuer"],
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!))
     };
 });
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -39,7 +39,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 builder.Services.AddIdentityCore<Student>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddIdentityCore<applicationUser>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentityCore<applicationUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddIdentityCore<Instructor>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

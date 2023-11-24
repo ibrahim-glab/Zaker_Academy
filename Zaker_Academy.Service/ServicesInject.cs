@@ -17,6 +17,7 @@ namespace Zaker_Academy.Service
         {
             services.AddTransient(typeof(IStudentService), typeof(StudentService));
             services.AddTransient(typeof(IInstructorService), typeof(InstructorService));
+            services.AddTransient(typeof(IAuthorizationService), typeof(AuthorizationService));
             return services;
         }
     }
