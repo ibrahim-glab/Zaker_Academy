@@ -11,10 +11,7 @@ using Zaker_Academy.Service.Interfaces;
 
 namespace Zaker_Academy.Service.Services
 {
-    public class StudentService : UserService<Student>, IStudentService
+    public class StudentService : IStudentService
     {
-        public StudentService(IMapper mapper, UserManager<Student> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work, IAuthorizationService authorizationService) : base(mapper, userManager, appusermanager, work, authorizationService)
-        {
-        }
     }
 }

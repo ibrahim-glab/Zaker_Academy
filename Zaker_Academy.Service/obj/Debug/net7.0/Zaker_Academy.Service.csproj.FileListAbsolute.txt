@@ -3,8 +3,8 @@ G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.Service.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.core.dll
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.core.pdb
+G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.csproj.AssemblyReference.cache
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.GeneratedMSBuildEditorConfig.editorconfig
 G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.AssemblyInfoInputs.cache

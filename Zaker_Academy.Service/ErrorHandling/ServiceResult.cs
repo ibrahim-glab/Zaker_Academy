@@ -12,6 +12,6 @@ namespace Zaker_Academy.Service.ErrorHandling
 
         public string? Message { get; set; } = "";
 
-        public string? Details { get; set; } = "";
+        public object? Details { get; set; } = "";
     }
 }

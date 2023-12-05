@@ -22,38 +22,6 @@ namespace Zaker_Academy.infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EnrollmentCourses", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<bool>("CompleteIt")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("EnrolmentDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("StudentId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("EnrollmentCourses");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -304,6 +272,32 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.EnrollmentCourses", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<bool>("CompleteIt")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EnrolmentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("EnrollmentCourses");
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
                 {
                     b.Property<int>("Id")
@@ -455,9 +449,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<int?>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<string>("InstructorId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<DateTime>("createdIt")
                         .HasColumnType("datetime2");
 
@@ -471,8 +462,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
-
-                    b.HasIndex("InstructorId");
 
                     b.ToTable("Reviews");
                 });
@@ -518,15 +507,14 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("CourseId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -596,6 +584,8 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CourseId");
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -605,52 +595,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("applicationUser");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Instructor", b =>
-                {
-                    b.HasBaseType("Zaker_Academy.infrastructure.Entities.applicationUser");
-
-                    b.Property<string>("AboutMe")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.HasDiscriminator().HasValue("Instructor");
-                });
-
-            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Student", b =>
-                {
-                    b.HasBaseType("Zaker_Academy.infrastructure.Entities.applicationUser");
-
-                    b.Property<string>("InstructorId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasIndex("InstructorId");
-
-                    b.HasDiscriminator().HasValue("Student");
-                });
-
-            modelBuilder.Entity("EnrollmentCourses", b =>
-                {
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Course", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -719,8 +663,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("Categoryid");
 
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Instructor", "Instructor")
-                        .WithMany("Courses")
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "Instructor")
+                        .WithMany()
                         .HasForeignKey("InstructorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -788,10 +732,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Course", null)
                         .WithMany("Reviews")
                         .HasForeignKey("CourseId");
-
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Instructor", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("InstructorId");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.StudentQuizScore", b =>
@@ -802,7 +742,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Student", "student")
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "student")
                         .WithMany()
                         .HasForeignKey("studentId");
 
@@ -811,11 +751,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("student");
                 });
 
-            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Student", b =>
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.applicationUser", b =>
                 {
-                    b.HasOne("Zaker_Academy.infrastructure.Entities.Instructor", null)
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Course", null)
                         .WithMany("Students")
-                        .HasForeignKey("InstructorId");
+                        .HasForeignKey("CourseId");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Comment", b =>
@@ -830,6 +770,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("Lessons");
 
                     b.Navigation("Reviews");
+
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
@@ -840,15 +782,6 @@ namespace Zaker_Academy.infrastructure.Migrations
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Quiz", b =>
                 {
                     b.Navigation("QuizQuestions");
-                });
-
-            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Instructor", b =>
-                {
-                    b.Navigation("Courses");
-
-                    b.Navigation("Reviews");
-
-                    b.Navigation("Students");
                 });
 #pragma warning restore 612, 618
         }

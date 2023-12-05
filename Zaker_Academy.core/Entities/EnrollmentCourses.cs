@@ -9,10 +9,8 @@ namespace Zaker_Academy.infrastructure.Entities
     public class EnrollmentCourses
     {
         public int id { get; set; }
-        public Student Student { get; set; }
         public string StudentId { get; set; }
 
-        public Course Course { get; set; }
         public int CourseId { get; set; }
 
         public DateTime EnrolmentDate { get; set; }

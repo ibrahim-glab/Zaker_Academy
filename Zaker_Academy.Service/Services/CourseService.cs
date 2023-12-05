@@ -16,10 +16,10 @@ namespace Zaker_Academy.Service.Services
     public class CourseService : ICourseService
     {
         private readonly IUnitOfWork unitOfWork;
-        private readonly UserStore<Instructor> instructorStore;
+        private readonly UserStore<applicationUser> instructorStore;
         private readonly IMapper mapper;
 
-        public CourseService(IUnitOfWork unitOfWork, UserStore<Instructor> userStore, IMapper mapper)
+        public CourseService(IUnitOfWork unitOfWork, UserStore<applicationUser> userStore, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             instructorStore = userStore;
@@ -34,7 +34,7 @@ namespace Zaker_Academy.Service.Services
             var category = await unitOfWork.CategoryRepository.GetByIdAsync(course.CategoryId);
             if (category == null)
                 return false;
-            Instructor? instructor = await instructorStore.FindByIdAsync(course.InstructorId);
+            applicationUser? instructor = await instructorStore.FindByIdAsync(course.InstructorId);
             if (instructor == null)
                 return false;
             Course Course = mapper.Map<Course>(course);

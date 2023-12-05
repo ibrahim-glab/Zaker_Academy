@@ -24,12 +24,9 @@ namespace Zaker_Academy.infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.ApplyConfiguration(new StudentConfigration());
-            modelBuilder.ApplyConfiguration(new instructorConfig());
+            modelBuilder.ApplyConfiguration<Course>(new CourseConfiguration());
             modelBuilder.Entity<Comment>().HasMany(s => s.Replies).WithOne().HasForeignKey(f => f.applicationUserId).HasForeignKey(f => f.CommentId).OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne().HasForeignKey(f => f.CourseId).OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Course>().HasOne(c => c.Instructor).WithMany(i => i.Courses);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -37,20 +34,13 @@ namespace Zaker_Academy.infrastructure
             base.OnConfiguring(optionsBuilder);
         }
 
-        internal Task<object> FindAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public DbSet<Category> categories { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Quiz> Quizzes { get; set; }
         public DbSet<QuizeQuestion> QuizQuestions { get; set; }
         public DbSet<QuestionOptions> QuestionOptions { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Student> Students { get; set; }
         public DbSet<StudentQuizScore> studentQuizScores { get; set; }
         public DbSet<EnrollmentCourses> EnrollmentCourses { get; set; }
         public DbSet<Comment> Comments { get; set; }

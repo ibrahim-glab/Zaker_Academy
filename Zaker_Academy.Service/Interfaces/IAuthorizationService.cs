@@ -10,6 +10,12 @@ namespace Zaker_Academy.Service.Interfaces
 {
     public interface IAuthorizationService
     {
-        Task<ServiceResult> CreateToken(string userName);
+        Task<ServiceResult> CreateTokenAsync(string username);
+
+        Task<ServiceResult> SendVerificationEmailAsync(string UserEmail, string callBackUrl);
+
+        Task<ServiceResult> CreateEmailTokenAsync(string username);
+
+        Task<ServiceResult> VerifyEmailAsync(string Email, string code);
     }
 }

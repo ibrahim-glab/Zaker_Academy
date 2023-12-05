@@ -30,9 +30,5 @@ namespace Zaker_Academy.infrastructure.Entities
         public DateTime LastProfileUpdate { get; set; }
 
         public DateTime CreatedAt { get; set; }
-
-        // Navigation property for related entities (e.g., courses, messages, etc.)
-
-        //public ICollection<Message> Messages { get; set; }
     }
 }

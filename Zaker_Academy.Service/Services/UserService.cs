@@ -14,40 +14,69 @@ using Zaker_Academy.Service.Interfaces;
 
 namespace Zaker_Academy.Service.Services
 {
-    public class UserService<T> : IUserService<T> where T : class
+    public class UserService : IUserService
     {
         private readonly IMapper _Mapper;
 
-        private readonly UserManager<T> userManager;
-        private readonly UserManager<applicationUser> appusermanager;
+        private readonly UserManager<applicationUser> userManager;
         private readonly IUnitOfWork unitOfWork;
         private readonly IAuthorizationService authorizationService;
 
-        public UserService(IMapper mapper, UserManager<T> userManager, UserManager<applicationUser> appusermanager, IUnitOfWork work, IAuthorizationService authorizationService)
+        public UserService(IMapper mapper, UserManager<applicationUser> userManager, IUnitOfWork work, IAuthorizationService authorizationService)
         {
             _Mapper = mapper;
-            this.appusermanager = appusermanager;
             this.userManager = userManager;
             unitOfWork = work;
             this.authorizationService = authorizationService;
         }
 
-        public Task<IdentityResult> Login()
+        public async Task<ServiceResult> Login(UserLoginDto userDto)
         {
-            throw new NotImplementedException();
+            ServiceResult serviceResult = new ServiceResult();
+
+            if (userDto is null)
+            {
+                serviceResult.Message = "Login Failed";
+                serviceResult.Details = "No Data was sent";
+            }
+            var user = await userManager.FindByNameAsync(userDto.UserName);
+            if (user is null)
+            {
+                serviceResult.Message = "Login Failed";
+                serviceResult.Details = "Invalid username or password";
+            }
+            else
+            {
+                var res = await userManager.CheckPasswordAsync(user, userDto.Password);
+                if (res)
+                {
+                    if (!user.EmailConfirmed)
+                    {
+                        serviceResult.Message = "Login Failed";
+                        serviceResult.Details = "Please Verify Your Email, Check your mail";
+                        return serviceResult;
+                    }
+                    serviceResult = await authorizationService.CreateTokenAsync(userDto.UserName);
+                    serviceResult.Message = "Login Succeeded";
+                    return serviceResult;
+                }
+                serviceResult.Message = "Login Failed";
+                serviceResult.Details = "Invalid username or password";
+            }
+            return serviceResult;
         }
 
         public async Task<ServiceResult> Register(UserCreationDto user)
         {
             ServiceResult serviceResult = new ServiceResult();
-            var User = _Mapper.Map<T>(user);
-            if (await appusermanager.FindByEmailAsync(user.Email) is not null)
+            var User = _Mapper.Map<applicationUser>(user);
+            if (await userManager.FindByEmailAsync(user.Email) is not null)
             {
                 serviceResult.Message = "Registration Filled";
                 serviceResult.Details = $"{user.Email} is already Register!";
                 return serviceResult;
             }
-            if (await appusermanager.FindByNameAsync(user.UserName) is not null)
+            if (await userManager.FindByNameAsync(user.UserName) is not null)
             {
                 serviceResult.Message = "Registration Filled";
                 serviceResult.Details = $"{user.UserName} is already Exist!";
@@ -63,11 +92,9 @@ namespace Zaker_Academy.Service.Services
                     {
                         serviceResult.Details += $" {err.Description} , ";
                     }
-                    throw new Exception(message: serviceResult.Details);
+                    throw new Exception(message: (string)serviceResult.Details!);
                 }
-
-                await userManager.AddToRoleAsync(User, user.Role);
-                serviceResult = await authorizationService.CreateToken(user.UserName);
+                serviceResult.succeeded = true;
                 serviceResult.Message = "Registration Succeeded";
                 transaction.Commit();
                 return serviceResult;

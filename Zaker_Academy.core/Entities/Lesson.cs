@@ -32,7 +32,5 @@ namespace Zaker_Academy.infrastructure.Entities
         public Course Course { get; set; } // Represents the course to which the lesson belongs
 
         public ICollection<Quiz> Quizzes { get; set; } // Represents quizzes associated with the lesson
-
-        // Constructors, additional methods, and custom validation can be added here
     }
 }

@@ -9,10 +9,10 @@ using Zaker_Academy.Service.ErrorHandling;
 
 namespace Zaker_Academy.Service.Interfaces
 {
-    public interface IUserService<T> where T : class
+    public interface IUserService
     {
         Task<ServiceResult> Register(UserCreationDto user);
 
-        Task<IdentityResult> Login();
+        Task<ServiceResult> Login(UserLoginDto userDto);
     }
 }

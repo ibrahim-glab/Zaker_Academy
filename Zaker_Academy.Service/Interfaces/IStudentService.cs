@@ -7,7 +7,7 @@ using Zaker_Academy.infrastructure.Entities;
 
 namespace Zaker_Academy.Service.Interfaces
 {
-    public interface IStudentService : IUserService<Student>
+    public interface IStudentService
     {
     }
 }
