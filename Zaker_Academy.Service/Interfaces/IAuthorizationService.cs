@@ -16,6 +16,10 @@ namespace Zaker_Academy.Service.Interfaces
 
         Task<ServiceResult> CreateEmailTokenAsync(string username);
 
+        Task<ServiceResult> CreatePasswordTokenAsync(string Email);
+
         Task<ServiceResult> VerifyEmailAsync(string Email, string code);
+
+        Task<ServiceResult> SendResetpasswordAsync(string UserEmail, string callBackUrl);
     }
 }

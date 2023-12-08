@@ -95,7 +95,24 @@ namespace Zaker_Academy.Controllers
             var res = await authorizationService.VerifyEmailAsync(email, token);
             if (!res.succeeded)
                 return BadRequest(res);
-            return Ok();
+            return Ok(new ServiceResult { Message = "Verification Succeeded , Now You can Login " });
+        }
+
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(string email)
+        {
+            if (email.IsNullOrEmpty())
+            {
+                return BadRequest("Invalid Payload");
+            }
+            var res = await authorizationService.CreatePasswordTokenAsync(email);
+            if (!res.succeeded)
+                return NotFound(res);
+            var codeE = Encoding.UTF8.GetString(Convert.FromBase64String(token));
+            var res = await authorizationService.VerifyEmailAsync(email, token);
+            if (!res.succeeded)
+                return BadRequest(res);
+            return Ok(new ServiceResult { Message = "Verification Succeeded , Now You can Login " });
         }
     }
 }
