@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {}
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {}
   },
   "projects": {
-    "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
         "projectName": "Zaker_Academy.core",
-        "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
-        "packagesPath": "C:\\Users\\glabh\\.nuget\\packages\\",
-        "outputPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\glabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/Curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -62,21 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
         "projectName": "Zaker_Academy.infrastructure",
-        "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
-        "packagesPath": "C:\\Users\\glabh\\.nuget\\packages\\",
-        "outputPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\glabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,15 +83,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/Curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
               }
             }
           }
@@ -148,21 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
         "projectName": "Zaker_Academy.Service",
-        "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
-        "packagesPath": "C:\\Users\\glabh\\.nuget\\packages\\",
-        "outputPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\obj\\",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\glabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,18 +168,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/Curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
               },
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
               }
             }
           }
@@ -221,21 +218,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
         "projectName": "Zaker_Academy",
-        "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
-        "packagesPath": "C:\\Users\\glabh\\.nuget\\packages\\",
-        "outputPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy\\obj\\",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\glabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -243,21 +240,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/Curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
               },
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
               },
-              "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
-                "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj"
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj"
               }
             }
           }
@@ -340,7 +336,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

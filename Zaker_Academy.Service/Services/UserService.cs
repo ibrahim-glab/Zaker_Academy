@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
@@ -66,7 +67,7 @@ namespace Zaker_Academy.Service.Services
             return serviceResult;
         }
 
-        public async Task<ServiceResult> Register(UserCreationDto user)
+        public async Task<ServiceResult> Register(UserCreationDto user , string CallbackUrl)
         {
             ServiceResult serviceResult = new ServiceResult();
             var User = _Mapper.Map<applicationUser>(user);
@@ -94,6 +95,23 @@ namespace Zaker_Academy.Service.Services
                     }
                     throw new Exception(message: (string)serviceResult.Details!);
                 }
+                res = await userManager.AddToRoleAsync(User, user.Role);
+               
+                var result = await authorizationService.CreateEmailTokenAsync(user.UserName);
+                if (!result.succeeded)
+                    throw new Exception(message:"Somthing Happend!! Please try again");
+                string encodedToken = Uri.EscapeDataString(result.Details.ToString()!); // Your URL-encoded string
+
+                CallbackUrl =  CallbackUrl + "&token=" + encodedToken;
+                int i = 0;
+                do
+                {
+                    result =  await authorizationService.SendVerificationEmailAsync(user.Email, CallbackUrl);
+                    i++;
+                } while (!result.succeeded && i<5);
+                if (!result.succeeded)
+                    throw new Exception(message: "Somthing Happend!! Please try again");
+
                 serviceResult.succeeded = true;
                 serviceResult.Message = "Registration Succeeded";
                 transaction.Commit();

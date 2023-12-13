@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.Web;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
@@ -55,27 +56,18 @@ namespace Zaker_Academy.Controllers
                 return BadRequest();
             if (!ModelState.IsValid)
                 BadRequest(ModelState);
-
+            if(! (String.Equals(user.Role , "instructor" , StringComparison.OrdinalIgnoreCase) || String.Equals(user.Role, "student", StringComparison.OrdinalIgnoreCase)))
+            {
+                ModelState.AddModelError("", "Invalid Role");
+                return BadRequest(ModelState);
+            }
             try
             {
                 ServiceResult result = new ServiceResult();
-
-                result = await userService.Register(user);
-
-                if (!result.succeeded)
-                    return BadRequest(result);
-                result = await authorizationService.CreateTokenAsync(user.UserName);
-                if (!result.succeeded)
-                    return BadRequest(result);
-                result = await authorizationService.CreateEmailTokenAsync(user.UserName);
-                if (!result.succeeded)
-                    return BadRequest(result);
-
                 var callBackUrl = Request.Scheme + "://" + Request.Host + Url.Action("VerifyEmail", "User", new { email = user.Email, token = result.Details });
-                result = await authorizationService.SendVerificationEmailAsync(user.Email, callBackUrl);
+                result = await userService.Register(user , callBackUrl);
                 if (!result.succeeded)
-                    return BadRequest(new ServiceResult { Message = "Registration Failed", Details = "Something Happened, Please Try Again " });
-
+                    return BadRequest(result);
                 return Ok(result);
             }
             catch (Exception e)
@@ -92,16 +84,20 @@ namespace Zaker_Academy.Controllers
             {
                 return BadRequest("Invalid Payload");
             }
-            var codeE = Encoding.UTF8.GetString(Convert.FromBase64String(token));
-            var res = await authorizationService.VerifyEmailAsync(email, token);
+            string decodedCode = Uri.UnescapeDataString(token);
+            var res = await authorizationService.VerifyEmailAsync(email, decodedCode);
             if (!res.succeeded)
                 return BadRequest(res);
-            return Ok(new ServiceResult { Message = "Verification Succeeded , Now You can Login " });
+            return Ok(new ServiceResult {succeeded = true, Message = "Verification Succeeded , Now You can Login " });
         }
 
         [HttpGet("ResetPassword")]
         public async Task<IActionResult> ResetPassword(string email)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             if (email.IsNullOrEmpty())
             {
                 return BadRequest("Invalid Payload");

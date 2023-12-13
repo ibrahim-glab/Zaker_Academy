@@ -44,5 +44,8 @@ namespace Zaker_Academy.Service.DTO_s
         public string? imageURL { get; set; }
 
         public string? aboutMe { get; set; }
+
+        [Required]
+        public string Role { get; set; }
     }
 }

@@ -768,19 +768,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\glabh\\.nuget\\packages\\": {}
+    "C:\\Users\\Bebo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+      "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
       "projectName": "Zaker_Academy.core",
-      "projectPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
-      "packagesPath": "C:\\Users\\glabh\\.nuget\\packages\\",
-      "outputPath": "G:\\web projects\\Zaker-Academy\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
+      "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+      "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\glabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -788,8 +788,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2/Curated-feeds/microsoftdotnet/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -828,7 +827,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

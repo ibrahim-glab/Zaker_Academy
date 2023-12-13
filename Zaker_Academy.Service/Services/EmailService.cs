@@ -24,8 +24,8 @@ namespace Zaker_Academy.Service.Services
                 Email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
                 using (var Smtp = new SmtpClient())
                 {
-                    await Smtp.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                    await Smtp.AuthenticateAsync(Sender, "rrulodvgibqcdbhr");
+                    await Smtp.ConnectAsync("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+                    await Smtp.AuthenticateAsync(Sender, "YCGUquBsbpCB6ahQzk");
                     await Smtp.SendAsync(Email);
                     await Smtp.DisconnectAsync(true);
                 }
