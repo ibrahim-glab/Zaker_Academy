@@ -120,7 +120,7 @@ namespace Zaker_Academy.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest("Invalid Payload");
+                return BadRequest("Invalid Payload ");
             }
             var res = await authorizationService.ConfirmResetPasswordAsync(resetPasswordDto);
             if (!res.succeeded)
