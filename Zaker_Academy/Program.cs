@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<JwtHelper>(builder.Configuration.GetSection("JWT"));
+builder.Services.Configure<EmailHelper>(builder.Configuration.GetSection("EmailService"));
 builder.Services.AddAuthorization();
 
 builder.Services.AddAuthentication(opt =>
@@ -38,7 +39,8 @@ builder.Services.AddAuthentication(opt =>
         ValidIssuer = builder.Configuration["JWT:Issuer"],
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!)),
+        ClockSkew = TimeSpan.FromSeconds(300) // Give Token Fault Tolrence in Clock Sync     
     };
 });
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -57,6 +59,8 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.SignIn.RequireConfirmedEmail = true;
 });
+builder.Services.Configure<DataProtectionTokenProviderOptions>(o =>
+       o.TokenLifespan = TimeSpan.FromHours(5));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -1,5 +1,6 @@
 ﻿using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.Extensions.Options;
 using MimeKit;
 using System;
 using System.Collections.Generic;
@@ -7,12 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zaker_Academy.Service.ErrorHandling;
+using Zaker_Academy.Service.Helper;
 using Zaker_Academy.Service.Interfaces;
 
 namespace Zaker_Academy.Service.Services
 {
     public class EmailService : IEmailService
     {
+        private readonly EmailHelper emailHelper;
+
+        public EmailService(IOptions<EmailHelper> options )
+        {
+            emailHelper = options.Value;
+        }
+
         public async Task<ServiceResult> sendAsync(string Subject, string body, string Sender, string reciver)
         {
             try
@@ -24,8 +33,8 @@ namespace Zaker_Academy.Service.Services
                 Email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
                 using (var Smtp = new SmtpClient())
                 {
-                    await Smtp.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                    await Smtp.AuthenticateAsync(Sender, "rrulodvgibqcdbhr");
+                    await Smtp.ConnectAsync(emailHelper.Host, emailHelper.Port, SecureSocketOptions.StartTls);
+                    await Smtp.AuthenticateAsync(Sender,emailHelper.Password);
                     await Smtp.SendAsync(Email);
                     await Smtp.DisconnectAsync(true);
                 }

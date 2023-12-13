@@ -11,7 +11,7 @@ namespace Zaker_Academy.Service.Interfaces
 {
     public interface IUserService
     {
-        Task<ServiceResult> Register(UserCreationDto user);
+        Task<ServiceResult> Register(UserCreationDto user , string CallbackUrl);
 
         Task<ServiceResult> Login(UserLoginDto userDto);
     }
