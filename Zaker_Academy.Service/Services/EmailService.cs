@@ -1,4 +1,5 @@
 ﻿using MailKit.Net.Smtp;
+using MailKit.Security;
 using MimeKit;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace Zaker_Academy.Service.Services
                 Email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
                 using (var Smtp = new SmtpClient())
                 {
-                    await Smtp.ConnectAsync("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
+                    await Smtp.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
                     await Smtp.AuthenticateAsync(Sender, "rrulodvgibqcdbhr");
                     await Smtp.SendAsync(Email);
                     await Smtp.DisconnectAsync(true);

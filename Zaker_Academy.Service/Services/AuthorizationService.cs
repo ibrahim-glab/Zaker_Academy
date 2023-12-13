@@ -2,9 +2,11 @@
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 using System.Security.Claims;
 using System.Text;
 using Zaker_Academy.infrastructure.Entities;
+using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 using Zaker_Academy.Service.Helper;
 using Zaker_Academy.Service.Interfaces;
@@ -24,6 +26,31 @@ namespace Zaker_Academy.Service.Services
             this.userManager = userManager;
             this.emailService = emailService;
             this.jwt = jwt.Value;
+        }
+
+        public async Task<ServiceResult> ConfirmResetPasswordAsync(ResetPasswordDto resetPasswordDto)
+        {
+            var result = new ServiceResult();
+
+            var user = await userManager.FindByEmailAsync(resetPasswordDto.UserEmail);
+            if (user == null)
+            {
+                result.Message = "Password Reset Failed";
+                result.Details = "User not found";
+                return result;
+            }
+
+            var resetResult = await userManager.ResetPasswordAsync(user, resetPasswordDto.Token, resetPasswordDto.NewPassword);
+            if (!resetResult.Succeeded)
+            {
+                result.Message = "Password Reset Failed";
+                result.Details = string.Join(", ", resetResult.Errors.Select(e => e.Description));
+                return result;
+            }
+
+            result.succeeded = true;
+            result.Message = "Password Reset Successful";
+            return result;
         }
 
         public async Task<ServiceResult> CreateEmailTokenAsync(string username)
@@ -54,7 +81,7 @@ namespace Zaker_Academy.Service.Services
                 };
             var Token = await userManager.GeneratePasswordResetTokenAsync(user);
 
-            return new ServiceResult() { succeeded = true, Message = "Create Token Succeeded", Details = Token }
+            return new ServiceResult() { succeeded = true, Message = "Create Token Succeeded", Details = Token };
         }
 
         public async Task<ServiceResult> CreateTokenAsync(string username)
@@ -83,6 +110,48 @@ namespace Zaker_Academy.Service.Services
             res.succeeded = true;
             res.Details = new JwtSecurityTokenHandler().WriteToken(SecurityToken);
             return res;
+        }
+
+        public async Task<ServiceResult> SendResetPasswordAsync(string UserEmail, string callBackUrl)
+        {
+            var result = new ServiceResult();
+
+            var user = await userManager.FindByEmailAsync(UserEmail);
+            if (user == null)
+            {
+                result.Message = "Password Reset Failed";
+                result.Details = "User not found";
+                return result;
+            }
+
+            try
+            {
+                // Read the HTML template content from the file
+                string body = File.ReadAllText("./Files/ResetPassword.html");
+                var token = await userManager.GeneratePasswordResetTokenAsync(user);
+
+                // Send reset password email
+                body.Replace(" ${Token}", token);
+                result = await emailService.sendAsync("Password Reset", body, "glabhamada@gmail.com", UserEmail);
+
+                if (!result.succeeded)
+                {
+                    result.Message = "Password Reset Failed";
+                    result.Details = "Error sending reset email";
+                    return result;
+                }
+
+                result.succeeded = true;
+                result.Message = "Password Reset Email Sent Successfully";
+                return result;
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., file not found, permission issues)
+                // Log the exception or take appropriate action based on your requirements
+                Console.WriteLine($"Error reading HTML template file: {ex.Message}");
+                return new ServiceResult { Message = "Password Reset Failed", Details = "Internal Server Error" }; // or throw an exception if needed
+            }
         }
 
         public async Task<ServiceResult> SendVerificationEmailAsync(string UserEmail, string callBackUrl)

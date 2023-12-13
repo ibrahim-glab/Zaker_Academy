@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zaker_Academy.infrastructure.Entities;
+using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 
 namespace Zaker_Academy.Service.Interfaces
@@ -20,6 +21,8 @@ namespace Zaker_Academy.Service.Interfaces
 
         Task<ServiceResult> VerifyEmailAsync(string Email, string code);
 
-        Task<ServiceResult> SendResetpasswordAsync(string UserEmail, string callBackUrl);
+        Task<ServiceResult> SendResetPasswordAsync(string UserEmail, string token);
+
+        Task<ServiceResult> ConfirmResetPasswordAsync(ResetPasswordDto resetPasswordDto);
     }
 }

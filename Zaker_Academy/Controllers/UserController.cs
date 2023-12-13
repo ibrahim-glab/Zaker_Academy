@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Linq;
 using System.Text;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
@@ -98,7 +99,7 @@ namespace Zaker_Academy.Controllers
             return Ok(new ServiceResult { Message = "Verification Succeeded , Now You can Login " });
         }
 
-        [HttpPost("ResetPassword")]
+        [HttpGet("ResetPassword")]
         public async Task<IActionResult> ResetPassword(string email)
         {
             if (email.IsNullOrEmpty())
@@ -108,11 +109,23 @@ namespace Zaker_Academy.Controllers
             var res = await authorizationService.CreatePasswordTokenAsync(email);
             if (!res.succeeded)
                 return NotFound(res);
-            var codeE = Encoding.UTF8.GetString(Convert.FromBase64String(token));
-            var res = await authorizationService.VerifyEmailAsync(email, token);
+            res = await authorizationService.SendResetPasswordAsync(email, res.Details?.ToString()!);
             if (!res.succeeded)
                 return BadRequest(res);
-            return Ok(new ServiceResult { Message = "Verification Succeeded , Now You can Login " });
+            return Ok(res);
+        }
+
+        [HttpPost("ConfirmResetPassword")]
+        public async Task<IActionResult> ConfirmResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid Payload");
+            }
+            var res = await authorizationService.ConfirmResetPasswordAsync(resetPasswordDto);
+            if (!res.succeeded)
+                return BadRequest(res);
+            return Ok(res);
         }
     }
 }
