@@ -102,6 +102,10 @@ namespace Zaker_Academy.Controllers
         [HttpGet("ResetPassword")]
         public async Task<IActionResult> ResetPassword(string email)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             if (email.IsNullOrEmpty())
             {
                 return BadRequest("Invalid Payload");
