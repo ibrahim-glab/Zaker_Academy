@@ -10,7 +10,9 @@ namespace Zaker_Academy.core.Interfaces
 
         Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition);
 
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
         Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null);
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
 
         Task<IEnumerable<T>> GetPagedAsync(
     Expression<Func<T, bool>> condition,

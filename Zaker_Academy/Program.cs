@@ -1,15 +1,10 @@
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Web;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Text.Unicode;
-using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure;
 using Zaker_Academy.infrastructure.Entities;
-using Zaker_Academy.infrastructure.Repository;
 using Zaker_Academy.Service;
 using Zaker_Academy.Service.Helper;
 

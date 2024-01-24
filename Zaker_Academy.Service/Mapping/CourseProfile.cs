@@ -1,10 +1,4 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
 

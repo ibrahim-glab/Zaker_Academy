@@ -1,11 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Zaker_Academy.infrastructure.Configurations;
 using Zaker_Academy.infrastructure.Entities;
 
@@ -25,8 +19,10 @@ namespace Zaker_Academy.infrastructure
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration<Course>(new CourseConfiguration());
-            modelBuilder.Entity<Comment>().HasMany(s => s.Replies).WithOne().HasForeignKey(f => f.applicationUserId).HasForeignKey(f => f.CommentId).OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne().HasForeignKey(f => f.CourseId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Comment>().HasMany(s => s.Replies).WithOne();
+            modelBuilder.Entity<Comment>().HasOne<applicationUser>().WithMany();
+            modelBuilder.Entity<Reply>().HasOne<applicationUser>().WithMany();
+            modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

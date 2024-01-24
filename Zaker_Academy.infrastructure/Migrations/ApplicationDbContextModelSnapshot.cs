@@ -196,11 +196,13 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.Property<string>("applicationUserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
+
+                    b.HasIndex("applicationUserId");
 
                     b.ToTable("Comments");
                 });
@@ -289,11 +291,14 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<DateTime>("EnrolmentDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("StudentId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("applicationUserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("applicationUserId");
 
                     b.ToTable("EnrollmentCourses");
                 });
@@ -429,11 +434,13 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.Property<string>("applicationUserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("ReplyId");
 
                     b.HasIndex("CommentId");
+
+                    b.HasIndex("applicationUserId");
 
                     b.ToTable("Replies");
                 });
@@ -655,6 +662,12 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("applicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
@@ -664,7 +677,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasForeignKey("Categoryid");
 
                     b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "Instructor")
-                        .WithMany()
+                        .WithMany("InstructorCourses")
                         .HasForeignKey("InstructorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -672,6 +685,23 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.EnrollmentCourses", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "applicationUser")
+                        .WithMany()
+                        .HasForeignKey("applicationUserId");
+
+                    b.Navigation("Course");
+
+                    b.Navigation("applicationUser");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
@@ -723,6 +753,12 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Comment", null)
                         .WithMany("Replies")
                         .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("applicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -782,6 +818,11 @@ namespace Zaker_Academy.infrastructure.Migrations
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Quiz", b =>
                 {
                     b.Navigation("QuizQuestions");
+                });
+
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.applicationUser", b =>
+                {
+                    b.Navigation("InstructorCourses");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,12 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
@@ -40,7 +33,9 @@ namespace Zaker_Academy.Service.Services
                 serviceResult.Message = "Login Failed";
                 serviceResult.Details = "No Data was sent";
             }
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             var user = await userManager.FindByNameAsync(userDto.UserName);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             if (user is null)
             {
                 serviceResult.Message = "Login Failed";
@@ -68,7 +63,7 @@ namespace Zaker_Academy.Service.Services
             return serviceResult;
         }
 
-        public async Task<ServiceResult> Register(UserCreationDto user , string CallbackUrl)
+        public async Task<ServiceResult> Register(UserCreationDto user, string CallbackUrl)
         {
             ServiceResult serviceResult = new ServiceResult();
             var User = _Mapper.Map<applicationUser>(user);
@@ -97,12 +92,16 @@ namespace Zaker_Academy.Service.Services
                     throw new Exception(message: (string)serviceResult.Details!);
                 }
                 var result = await authorizationService.CreateEmailTokenAsync(user.UserName);
-                if(!result.succeeded)
+                if (!result.succeeded)
                     throw new Exception(message: "Somthing Happend");
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+#pragma warning disable CS8604 // Possible null reference argument.
                 var Token = Uri.EscapeDataString(result.Details.ToString());
-                CallbackUrl = CallbackUrl +"&" + "token=" + Token;
+#pragma warning restore CS8604 // Possible null reference argument.
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                CallbackUrl = CallbackUrl + "&" + "token=" + Token;
 
-                 result = await authorizationService.SendVerificationEmailAsync(user.Email , CallbackUrl);
+                result = await authorizationService.SendVerificationEmailAsync(user.Email, CallbackUrl);
                 if (!result.succeeded)
                     throw new Exception(message: "Somthing Happend");
 

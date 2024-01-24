@@ -1,15 +1,5 @@
-using AutoMapper;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Moq;
-using Zaker_Academy.core.Interfaces;
-using Zaker_Academy.infrastructure.Entities;
-using Zaker_Academy.infrastructure.Repository;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.Interfaces;
-using Zaker_Academy.Service.Mapping;
-using Zaker_Academy.Service.Services;
 
 namespace Zaker_Academy.Test
 {
@@ -20,7 +10,9 @@ namespace Zaker_Academy.Test
     {
         public class StoreMock : ICourseService
         {
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
             public async Task<bool> Create(CourseCreationDTO creationDTO)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
             {
                 return false;
             }
