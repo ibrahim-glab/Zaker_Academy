@@ -1,13 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json.Linq;
-using System.Text;
-using System.Web;
-using Zaker_Academy.infrastructure.Entities;
+using System.Security.Claims;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 using Zaker_Academy.Service.Interfaces;
+using IAuthorizationService = Zaker_Academy.Service.Interfaces.IAuthorizationService;
 
 namespace Zaker_Academy.Controllers
 {
@@ -56,7 +54,7 @@ namespace Zaker_Academy.Controllers
                 return BadRequest();
             if (!ModelState.IsValid)
                 BadRequest(ModelState);
-            if(! (String.Equals(user.Role , "instructor" , StringComparison.OrdinalIgnoreCase) || String.Equals(user.Role, "student", StringComparison.OrdinalIgnoreCase)))
+            if (!(String.Equals(user.Role, "instructor", StringComparison.OrdinalIgnoreCase) || String.Equals(user.Role, "student", StringComparison.OrdinalIgnoreCase)))
             {
                 ModelState.AddModelError("", "Invalid Role");
                 return BadRequest(ModelState);
@@ -65,7 +63,7 @@ namespace Zaker_Academy.Controllers
             {
                 ServiceResult result = new ServiceResult();
                 var callBackUrl = Request.Scheme + "://" + Request.Host + Url.Action("VerifyEmail", "User", new { email = user.Email, token = result.Details });
-                result = await userService.Register(user , callBackUrl);
+                result = await userService.Register(user, callBackUrl);
                 if (!result.succeeded)
                     return BadRequest(result);
                 return Ok(result);
@@ -80,6 +78,8 @@ namespace Zaker_Academy.Controllers
         [HttpGet("VerifyEmail")]
         public async Task<IActionResult> VerifyEmail(string email, string token)
         {
+
+
             if (email.IsNullOrEmpty() || token.IsNullOrEmpty())
             {
                 return BadRequest("Invalid Payload");
@@ -88,12 +88,18 @@ namespace Zaker_Academy.Controllers
             var res = await authorizationService.VerifyEmailAsync(email, decodedCode);
             if (!res.succeeded)
                 return BadRequest(res);
-            return Ok(new ServiceResult {succeeded = true, Message = "Verification Succeeded , Now You can Login " });
+            return Ok(new ServiceResult { succeeded = true, Message = "Verification Succeeded , Now You can Login " });
         }
-
+        [Authorize]
         [HttpGet("ResetPassword")]
         public async Task<IActionResult> ResetPassword(string email)
         {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -110,10 +116,15 @@ namespace Zaker_Academy.Controllers
                 return BadRequest(res);
             return Ok(res);
         }
-
+        [Authorize]
         [HttpPost("ConfirmResetPassword")]
         public async Task<IActionResult> ConfirmResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
         {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
             if (!ModelState.IsValid)
             {
                 return BadRequest("Invalid Payload ");

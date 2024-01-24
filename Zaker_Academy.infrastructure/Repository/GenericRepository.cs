@@ -1,11 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
 using Zaker_Academy.core.Interfaces;
 
 namespace Zaker_Academy.infrastructure.Repository
@@ -22,6 +16,7 @@ namespace Zaker_Academy.infrastructure.Repository
 
         public async Task BulkDelete(IEnumerable<T> entities)
         {
+#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 _context.Set<T>().RemoveRange(entities);
@@ -31,10 +26,12 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
+#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task BulkInsert(IEnumerable<T> entities)
         {
+#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 await _context.Set<T>().AddRangeAsync(entities);
@@ -44,10 +41,12 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
+#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task BulkUpdate(IEnumerable<T> entities)
         {
+#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 _context.Set<T>().UpdateRange(entities);
@@ -57,6 +56,7 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
+#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task<bool> ExistsAsync(Expression<Func<T, bool>> condition)
@@ -104,7 +104,9 @@ namespace Zaker_Academy.infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         async Task IGenericRepository<T>.Delete(T entity)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             _context.Set<T>().Remove(entity);
         }
@@ -114,12 +116,16 @@ namespace Zaker_Academy.infrastructure.Repository
             return await _context.Set<T>().ToListAsync();
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         async Task IGenericRepository<T>.Update(T entity)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             _context.Set<T>().Update(entity);
         }
 
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
         public async Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null)
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
         {
             IQueryable<T> res = _context.Set<T>();
 

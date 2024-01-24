@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Web.Resource;
-using Microsoft.OpenApi.Writers;
 using System.Data;
-using System.Net.NetworkInformation;
 
 namespace Zaker_Academy.Controllers
 {

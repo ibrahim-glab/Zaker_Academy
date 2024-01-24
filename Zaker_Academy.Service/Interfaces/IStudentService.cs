@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Zaker_Academy.infrastructure.Entities;
-
-namespace Zaker_Academy.Service.Interfaces
+﻿namespace Zaker_Academy.Service.Interfaces
 {
     public interface IStudentService
     {
