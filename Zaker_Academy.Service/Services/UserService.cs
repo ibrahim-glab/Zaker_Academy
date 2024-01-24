@@ -96,6 +96,16 @@ namespace Zaker_Academy.Service.Services
                     }
                     throw new Exception(message: (string)serviceResult.Details!);
                 }
+                var result = await authorizationService.CreateEmailTokenAsync(user.UserName);
+                if(!result.succeeded)
+                    throw new Exception(message: "Somthing Happend");
+                var Token = Uri.EscapeDataString(result.Details.ToString());
+                CallbackUrl = CallbackUrl +"&" + "token=" + Token;
+
+                 result = await authorizationService.SendVerificationEmailAsync(user.Email , CallbackUrl);
+                if (!result.succeeded)
+                    throw new Exception(message: "Somthing Happend");
+
                 serviceResult.succeeded = true;
                 serviceResult.Message = "Registration Succeeded";
                 transaction.Commit();

@@ -204,3 +204,5 @@ C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\refint\Z
 C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.pdb
 C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.genruntimeconfig.cache
 C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Zaker_Academy.dll
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\SendGrid.dll
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\StarkbankEcdsa.dll

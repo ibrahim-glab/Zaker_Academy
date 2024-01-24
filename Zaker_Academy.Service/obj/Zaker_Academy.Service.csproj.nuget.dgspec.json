@@ -200,6 +200,10 @@
             "MailKit": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.1, )"
             }
           },
           "imports": [

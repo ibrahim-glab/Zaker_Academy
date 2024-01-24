@@ -1,0 +1,7 @@
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.csproj.AssemblyReference.cache
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.AssemblyInfoInputs.cache
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.AssemblyInfo.cs
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.csproj.CoreCompileInputs.cache
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Test\obj\Debug\net7.0\Zaker_Academy.Test.sourcelink.json
