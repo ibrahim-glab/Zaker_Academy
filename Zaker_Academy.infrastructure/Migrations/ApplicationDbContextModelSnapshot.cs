@@ -155,23 +155,41 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Category", b =>
+            modelBuilder.Entity("Zaker_Academy.core.Entities.SubCategory", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("description")
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name")
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("SubCategories");
+                });
+
+            modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("categories");
                 });
@@ -215,7 +233,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseId"));
 
-                    b.Property<int?>("Categoryid")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
@@ -267,7 +285,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasKey("CourseId");
 
-                    b.HasIndex("Categoryid");
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("InstructorId");
 
@@ -520,8 +538,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTimeOffset>("DateOfBirth")
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -655,6 +673,17 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Zaker_Academy.core.Entities.SubCategory", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Comment", b =>
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Course", null)
@@ -674,7 +703,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("Categoryid");
+                        .HasForeignKey("CategoryId");
 
                     b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "Instructor")
                         .WithMany("InstructorCourses")

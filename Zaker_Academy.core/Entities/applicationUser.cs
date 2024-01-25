@@ -14,8 +14,8 @@ namespace Zaker_Academy.infrastructure.Entities
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string LastName { get; set; }
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-
-        public DateTime DateOfBirth { get; set; }
+        [Required]
+        public DateTimeOffset DateOfBirth { get; set; }
 
         [MaxLength(10)]
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
@@ -31,6 +31,6 @@ namespace Zaker_Academy.infrastructure.Entities
         public DateTime LastProfileUpdate { get; set; }
 
         public DateTime CreatedAt { get; set; }
-        public List<Course> InstructorCourses {  get; set; }
+        public List<Course> InstructorCourses {  get; set;  }
     }
 }

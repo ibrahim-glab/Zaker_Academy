@@ -37,6 +37,10 @@ namespace Zaker_Academy.Service.Mapping
                des => des.imageURL,
                opt => opt.MapFrom(s => s.imageURL)
                );
+            CreateMap<applicationUser, UserDto>();
+           
+
+
         }
     }
 }

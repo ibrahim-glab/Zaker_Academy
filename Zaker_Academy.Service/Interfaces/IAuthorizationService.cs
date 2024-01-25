@@ -5,18 +5,18 @@ namespace Zaker_Academy.Service.Interfaces
 {
     public interface IAuthorizationService
     {
-        Task<ServiceResult> CreateTokenAsync(string username);
+        Task<ServiceResult<string>> CreateTokenAsync(string username);
 
-        Task<ServiceResult> SendVerificationEmailAsync(string UserEmail, string callBackUrl);
+        Task<ServiceResult<string>> SendVerificationEmailAsync(string UserEmail, string callBackUrl);
 
-        Task<ServiceResult> CreateEmailTokenAsync(string username);
+        Task<ServiceResult<string>> CreateEmailTokenAsync(string username);
 
-        Task<ServiceResult> CreatePasswordTokenAsync(string Email);
+        Task<ServiceResult<string>> CreatePasswordTokenAsync(string Email);
 
-        Task<ServiceResult> VerifyEmailAsync(string Email, string code);
+        Task<ServiceResult<string>> VerifyEmailAsync(string Email, string code);
 
-        Task<ServiceResult> SendResetPasswordAsync(string UserEmail, string token);
+        Task<ServiceResult<string>> SendResetPasswordAsync(string UserEmail, string token);
 
-        Task<ServiceResult> ConfirmResetPasswordAsync(ResetPasswordDto resetPasswordDto);
+        Task<ServiceResult<string>> ConfirmResetPasswordAsync(ResetPasswordDto resetPasswordDto);
     }
 }

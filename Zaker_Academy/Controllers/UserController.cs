@@ -32,7 +32,7 @@ namespace Zaker_Academy.Controllers
 
             try
             {
-                ServiceResult result = new ServiceResult();
+                ServiceResult<string> result = new ServiceResult<string>();
 
                 result = await userService.Login(user);
 
@@ -61,8 +61,8 @@ namespace Zaker_Academy.Controllers
             }
             try
             {
-                ServiceResult result = new ServiceResult();
-                var callBackUrl = Request.Scheme + "://" + Request.Host + Url.Action("VerifyEmail", "User", new { email = user.Email, token = result.Details });
+                ServiceResult<string> result = new ServiceResult<string>();
+                var callBackUrl = Request.Scheme + "://" + Request.Host + Url.Action("VerifyEmail", "User", new { email = user.Email, token = result.Data });
                 result = await userService.Register(user, callBackUrl);
                 if (!result.succeeded)
                     return BadRequest(result);
@@ -88,7 +88,7 @@ namespace Zaker_Academy.Controllers
             var res = await authorizationService.VerifyEmailAsync(email, decodedCode);
             if (!res.succeeded)
                 return BadRequest(res);
-            return Ok(new ServiceResult { succeeded = true, Message = "Verification Succeeded , Now You can Login " });
+            return Ok(new ServiceResult<string> { succeeded = true, Message = "Verification Succeeded , Now You can Login " });
         }
         [Authorize]
         [HttpGet("ResetPassword")]
@@ -111,7 +111,7 @@ namespace Zaker_Academy.Controllers
             var res = await authorizationService.CreatePasswordTokenAsync(email);
             if (!res.succeeded)
                 return NotFound(res);
-            res = await authorizationService.SendResetPasswordAsync(email, res.Details?.ToString()!);
+            res = await authorizationService.SendResetPasswordAsync(email, res.Data?.ToString()!);
             if (!res.succeeded)
                 return BadRequest(res);
             return Ok(res);
@@ -133,6 +133,62 @@ namespace Zaker_Academy.Controllers
             if (!res.succeeded)
                 return BadRequest(res);
             return Ok(res);
+        }
+        [Authorize]
+        [HttpPut("UpdateProfile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UserDto updateProfileDto)
+        {
+            if (updateProfileDto is null)
+                return BadRequest();
+            if (updateProfileDto.DateOfBirth == DateTimeOffset.MinValue)
+                return BadRequest(error: "DateOfBirth is Required");
+            if (!ModelState.IsValid)
+                BadRequest(ModelState);
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            try
+            {
+                ServiceResult<UserDto> result = new ServiceResult<UserDto>();
+
+                result = await userService.UpdateProfile(updateProfileDto , userId);
+
+                if (!result.succeeded)
+                    return BadRequest(result);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("", e.Message);
+                return BadRequest(ModelState);
+            }
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> GetUser()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return Unauthorized();
+            }    
+            try
+            {
+                ServiceResult<UserDto> result = new ServiceResult<UserDto>();
+
+                result =  await userService.GetUser(userId);
+
+                if (result == null)
+                    return NotFound();
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("", e.Message);
+                return BadRequest(ModelState);
+            }
         }
     }
 }

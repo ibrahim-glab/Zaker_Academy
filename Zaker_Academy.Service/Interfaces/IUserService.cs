@@ -5,8 +5,10 @@ namespace Zaker_Academy.Service.Interfaces
 {
     public interface IUserService
     {
-        Task<ServiceResult> Register(UserCreationDto user, string CallbackUrl);
+        Task<ServiceResult<string>> Register(UserCreationDto user, string CallbackUrl);
 
-        Task<ServiceResult> Login(UserLoginDto userDto);
+        Task<ServiceResult<string>> Login(UserLoginDto userDto);
+        Task<ServiceResult<UserDto>> UpdateProfile(UserDto updateProfileDto , string id );
+        Task<ServiceResult<UserDto>> GetUser(string id);
     }
 }

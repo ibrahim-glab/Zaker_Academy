@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Zaker_Academy.core.Entities;
 using Zaker_Academy.infrastructure.Configurations;
 using Zaker_Academy.infrastructure.Entities;
 
@@ -31,6 +32,7 @@ namespace Zaker_Academy.infrastructure
         }
 
         public DbSet<Category> categories { get; set; }
+        public DbSet<SubCategory> SubCategories { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Quiz> Quizzes { get; set; }

@@ -20,7 +20,7 @@ namespace Zaker_Academy.Service.Services
 
 
 
-        public async Task<ServiceResult> sendAsync(string Subject, string body, string Sender, string reciver)
+        public async Task<ServiceResult<string>> sendAsync(string Subject, string body, string Sender, string reciver)
         {
             try
             {
@@ -34,13 +34,13 @@ namespace Zaker_Academy.Service.Services
                 var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
                 var response = await client.SendEmailAsync(msg);
                 if (response.IsSuccessStatusCode)
-                    return new ServiceResult() { succeeded = true };
+                    return new ServiceResult<string>() {  succeeded = true };
                 throw new Exception(message: "Verfication Failed !! , Please Try again later.");
 
             }
             catch (Exception e)
             {
-                return new ServiceResult() { Message = "Verification Email Process Failed ", Details = e };
+                return new ServiceResult<string>() { Message = "Verification Email Process Failed ", Error = e.Message };
             }
         }
     }

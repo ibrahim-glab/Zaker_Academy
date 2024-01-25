@@ -10,98 +10,138 @@ namespace Zaker_Academy.Service.Services
 {
     public class UserService : IUserService
     {
-        private readonly IMapper _Mapper;
+        private readonly IMapper _mapper;
+        private readonly UserManager<applicationUser> _userManager;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IAuthorizationService _authorizationService;
 
-        private readonly UserManager<applicationUser> userManager;
-        private readonly IUnitOfWork unitOfWork;
-        private readonly IAuthorizationService authorizationService;
-
-        public UserService(IMapper mapper, UserManager<applicationUser> userManager, IUnitOfWork work, IAuthorizationService authorizationService)
+        public UserService(IMapper mapper, UserManager<applicationUser> userManager, IUnitOfWork unitOfWork, IAuthorizationService authorizationService)
         {
-            _Mapper = mapper;
-            this.userManager = userManager;
-            unitOfWork = work;
-            this.authorizationService = authorizationService;
+            _mapper = mapper;
+            _userManager = userManager;
+            _unitOfWork = unitOfWork;
+            _authorizationService = authorizationService;
         }
 
-        public async Task<ServiceResult> Login(UserLoginDto userDto)
+        public async Task<ServiceResult<string>> Login(UserLoginDto userDto)
         {
-            ServiceResult serviceResult = new ServiceResult();
+            ServiceResult<string> serviceResult = new ServiceResult<string>();
 
-            if (userDto is null)
+            if (userDto == null)
             {
                 serviceResult.Message = "Login Failed";
-                serviceResult.Details = "No Data was sent";
+                serviceResult.Error = "No Data was sent";
+                return serviceResult;
             }
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            var user = await userManager.FindByNameAsync(userDto.UserName);
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-            if (user is null)
+
+            var user = await _userManager.FindByNameAsync(userDto.UserName);
+
+            if (user == null || !await _userManager.CheckPasswordAsync(user, userDto.Password))
             {
                 serviceResult.Message = "Login Failed";
-                serviceResult.Details = "Invalid username or password";
+                serviceResult.Error = "Invalid username or password";
+                return serviceResult;
             }
-            else
+
+            if (!user.EmailConfirmed)
             {
-                var res = await userManager.CheckPasswordAsync(user, userDto.Password);
-                if (res)
-                {
-                    if (!user.EmailConfirmed)
-                    {
-                        serviceResult.Message = "Login Failed";
-                        serviceResult.Details = "Please Verify Your Email, Check your mail";
-                        return serviceResult;
-                    }
-                    serviceResult = await authorizationService.CreateTokenAsync(userDto.UserName);
-                    serviceResult.succeeded = true;
-                    serviceResult.Message = "Login Succeeded";
-                    return serviceResult;
-                }
                 serviceResult.Message = "Login Failed";
-                serviceResult.Details = "Invalid username or password";
+                serviceResult.Error = "Please Verify Your Email, Check your mail";
+                return serviceResult;
             }
+
+            serviceResult = await _authorizationService.CreateTokenAsync(userDto.UserName);
+            serviceResult.succeeded = true;
+            serviceResult.Message = "Login Succeeded";
             return serviceResult;
         }
 
-        public async Task<ServiceResult> Register(UserCreationDto user, string CallbackUrl)
+        public applicationUser MapUser(applicationUser applicationUser , UserDto userDto)
         {
-            ServiceResult serviceResult = new ServiceResult();
-            var User = _Mapper.Map<applicationUser>(user);
-            if (await userManager.FindByEmailAsync(user.Email) is not null)
+
+            applicationUser.PhoneNumber = userDto.PhoneNumber;
+            applicationUser.FirstName = userDto.FirstName;
+            applicationUser.LastName = userDto.LastName;
+            applicationUser.DateOfBirth = userDto.DateOfBirth;
+            applicationUser.Gender = userDto.Gender;
+            applicationUser.imageURL = userDto.imageURL;
+            return applicationUser;
+        }
+        public async Task<ServiceResult<UserDto>> UpdateProfile(UserDto updateProfileDto , string id)
+        {
+            ServiceResult<UserDto> result = new ServiceResult<UserDto>();
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
             {
-                serviceResult.Message = "Registration Filled";
-                serviceResult.Details = $"{user.Email} is already Register!";
+                result.Message = "Retrive User Failed";
+                result.Error = "User Not Found";
+                return result;
+            }
+
+            user = MapUser(user, updateProfileDto);
+            IdentityResult res = await _userManager.UpdateAsync(user);
+
+            if (!res.Succeeded)
+            {
+                foreach (var err in res.Errors)
+                {
+                    result.Error += $" {err.Description} , ";
+                }
+                result.Message = "Failed to update profile";
+                return result;
+            }
+
+            result.succeeded = true;
+            result.Message = "Profile updated successfully";
+            result.Data = _mapper.Map<UserDto>(user) ;
+            return result;
+        }
+
+        public async Task<ServiceResult<string>> Register(UserCreationDto user, string callbackUrl)
+        {
+            ServiceResult<string> serviceResult = new ServiceResult<string>();
+            var User = _mapper.Map<applicationUser>(user);
+
+            if (await _userManager.FindByEmailAsync(user.Email) is not null)
+            {
+                serviceResult.Message = "Registration Failed";
+                serviceResult.Error = $"{user.Email} is already Register!";
                 return serviceResult;
             }
-            if (await userManager.FindByNameAsync(user.UserName) is not null)
+
+            if (await _userManager.FindByNameAsync(user.UserName) is not null)
             {
-                serviceResult.Message = "Registration Filled";
-                serviceResult.Details = $"{user.UserName} is already Exist!";
+                serviceResult.Message = "Registration Failed";
+                serviceResult.Error = $"{user.UserName} is already Exist!";
                 return serviceResult;
             }
-            using var transaction = unitOfWork.BeginTransaction();
+
+            using var transaction = _unitOfWork.BeginTransaction();
             try
             {
-                IdentityResult res = await userManager.CreateAsync(User, user.Password);
+                IdentityResult res = await _userManager.CreateAsync(User, user.Password);
+
                 if (!res.Succeeded)
                 {
                     foreach (var err in res.Errors)
                     {
-                        serviceResult.Details += $" {err.Description} , ";
+                        serviceResult.Error += $" {err.Description} , ";
                     }
-                    throw new Exception(message: (string)serviceResult.Details!);
+                    throw new Exception(message: (string)serviceResult.Error!);
                 }
-                var result = await authorizationService.CreateEmailTokenAsync(user.UserName);
+
+                var result = await _authorizationService.CreateEmailTokenAsync(User.Email!);
+
                 if (!result.succeeded)
                     throw new Exception(message: "Somthing Happend");
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-#pragma warning disable CS8604 // Possible null reference argument.
-                var Token = Uri.EscapeDataString(result.Details.ToString());
-#pragma warning restore CS8604 // Possible null reference argument.
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                CallbackUrl = CallbackUrl + "&" + "token=" + Token;
 
-                result = await authorizationService.SendVerificationEmailAsync(user.Email, CallbackUrl);
+                var token = Uri.EscapeDataString(result.Data.ToString());
+                callbackUrl += $"&token={token}";
+
+                result = await _authorizationService.SendVerificationEmailAsync(User.Email!, callbackUrl);
+
                 if (!result.succeeded)
                     throw new Exception(message: "Somthing Happend");
 
@@ -114,9 +154,19 @@ namespace Zaker_Academy.Service.Services
             {
                 transaction.Rollback();
                 serviceResult.Message = e.Message;
-                serviceResult.Details = "Internal Server Error";
+                serviceResult.Error = "Internal Server Error";
                 return serviceResult;
             }
+        }
+
+        public async Task<ServiceResult<UserDto>> GetUser(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+                return null;
+
+            return new ServiceResult<UserDto> {succeeded = true , Data = _mapper.Map<UserDto>(user) };
         }
     }
 }
