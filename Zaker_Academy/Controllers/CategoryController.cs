@@ -54,6 +54,27 @@ namespace Zaker_Academy.Controllers
             }
         }
 
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id is 0)
+                return BadRequest();
+            if (!User.IsInRole("ADMIN"))
+                return Forbid();
+            try
+            {
+                var res = await CategoryService.Delete(id);
+                if (res.succeeded is false)
+                    return NotFound();
+             
+                return Ok();
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500); ;
+            }
+        }
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Put(int id , [FromBody] CategoryCreationDto category)
         {

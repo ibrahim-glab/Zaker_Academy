@@ -135,8 +135,8 @@ namespace Zaker_Academy.Controllers
             return Ok(res);
         }
         [Authorize]
-        [HttpPut("UpdateProfile")]
-        public async Task<IActionResult> UpdateProfile([FromBody] UserDto updateProfileDto)
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody] UserDto updateProfileDto)
         {
             if (updateProfileDto is null)
                 return BadRequest();

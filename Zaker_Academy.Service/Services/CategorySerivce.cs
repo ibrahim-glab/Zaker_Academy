@@ -37,6 +37,23 @@ namespace Zaker_Academy.Service.Services
           
         }
 
+        public async Task<ServiceResult<string>> Delete(int id)
+        {
+            try
+            {
+                var category = await _unitofwork.CategoryRepository.GetByIdAsync(id);
+                if (category is null)
+                    return new ServiceResult<string> { succeeded = false };
+                await _unitofwork.CategoryRepository.Delete(category);
+                await _unitofwork.SaveChanges();
+                return new ServiceResult<string> { succeeded = true };
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public async Task<ServiceResult<IEnumerable<CategoryDto>>> GetAll()
         {
             try
