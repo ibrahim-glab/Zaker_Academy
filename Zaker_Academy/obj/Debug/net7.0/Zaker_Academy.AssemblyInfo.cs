@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zaker_Academy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+685d8b7a83391dec76d6e83ba9aecd73036d86c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2d15d3395dada71f513ba2793e13ba1481e4b6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zaker_Academy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zaker_Academy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
