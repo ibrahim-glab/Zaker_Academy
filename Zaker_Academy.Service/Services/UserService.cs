@@ -131,8 +131,11 @@ namespace Zaker_Academy.Service.Services
                     }
                     throw new Exception(message: (string)serviceResult.Error!);
                 }
+                res  = await _userManager.AddToRoleAsync(User, user.Role);
+                if (!res.Succeeded)
+                    throw new Exception(message: (string)serviceResult.Error!);
 
-                var result = await _authorizationService.CreateEmailTokenAsync(User.Email!);
+                var result = await _authorizationService.CreateEmailTokenAsync(User.UserName!);
 
                 if (!result.succeeded)
                     throw new Exception(message: "Somthing Happend");

@@ -14,6 +14,7 @@ namespace Zaker_Academy.Service.Mapping
         public CategoryProfile()
         {
             CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Category, CategoryCreationDto>().ReverseMap();
         }
     }
 }

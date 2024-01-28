@@ -104,9 +104,7 @@ namespace Zaker_Academy.infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
-#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         async Task IGenericRepository<T>.Delete(T entity)
-#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             _context.Set<T>().Remove(entity);
         }

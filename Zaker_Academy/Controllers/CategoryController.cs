@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
+using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.Interfaces;
 
@@ -19,6 +20,63 @@ namespace Zaker_Academy.Controllers
             CategoryService = categoryService;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            try
+            {
+                return Ok(await CategoryService.GetAll());
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500); ;
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            if (id is 0)
+                return BadRequest();
+            try
+            {
+                var res = await CategoryService.GetById(id);
+                if (res.Data is null)
+                    return NotFound();
+               
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500); ;
+            }
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id , [FromBody] CategoryCreationDto category)
+        {
+            if (id is 0)
+                return BadRequest();
+            if (category is null)
+                return NoContent();
+            if (!User.IsInRole("ADMIN"))
+                return Forbid();
+            try
+            {
+                var res = await CategoryService.Update(id , category);
+
+                if (!res.succeeded)
+                    return NotFound();
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500); ;
+            }
+        }
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CategoryCreationDto category)
         {
@@ -37,7 +95,7 @@ namespace Zaker_Academy.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(500);           
+                return StatusCode(500);
             }
         }
         
