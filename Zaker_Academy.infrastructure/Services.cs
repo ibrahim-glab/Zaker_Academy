@@ -11,6 +11,7 @@ namespace Zaker_Academy.infrastructure
             // Register your custom services here
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // Replace with your actual service registration
             services.AddTransient(typeof(ICategoryRepository), typeof(CategoryRepository)); // Replace with your actual service registration
+            services.AddTransient(typeof(ISubCategoryRepository), typeof(SubCategoryRepository)); // Replace with your actual service registration
             services.AddTransient(typeof(ICommentRepository), typeof(CommentRepository)); // Replace with your actual service registration
             services.AddTransient(typeof(ICourseRepository), typeof(CourseRepository)); // Replace with your actual service registration
             services.AddTransient(typeof(IEnrollmentCoursesRepository), typeof(EnrollmentCoursesRepository)); // Replace with your actual service registration
