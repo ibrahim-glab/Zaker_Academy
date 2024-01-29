@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zaker_Academy.core.Entities;
 using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
@@ -36,6 +37,26 @@ namespace Zaker_Academy.Service.Services
           
           
         }
+
+        public async Task<ServiceResult<SubCategoryCreationDto>> CreateSubCategory(int id, SubCategoryCreationDto categoryCreationDto)
+        {
+            try
+            {
+                var category = await _unitofwork.CategoryRepository.GetByIdAsync(id);
+                if (category is null)
+                    return new ServiceResult<SubCategoryCreationDto> { succeeded = false };
+                
+                await _unitofwork.SubCategoryRepository.Add(new SubCategory { Name = categoryCreationDto.Name, Category = category, CategoryId = id });
+                return new ServiceResult<SubCategoryCreationDto> { succeeded = true , Data =  categoryCreationDto };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+               
+        }
+            
 
         public async Task<ServiceResult<string>> Delete(int id)
         {

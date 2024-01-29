@@ -5,6 +5,7 @@ namespace Zaker_Academy.core.Interfaces
     public interface IUnitOfWork
     {
         public ICategoryRepository CategoryRepository { get; }
+        public ISubCategoryRepository SubCategoryRepository { get; }
         public ICommentRepository CommentRepository { get; }
         public ICourseRepository CourseRepository { get; }
         public IEnrollmentCoursesRepository EnrollmentCoursesRepository { get; }

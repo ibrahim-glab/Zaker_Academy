@@ -22,6 +22,8 @@ namespace Zaker_Academy.infrastructure.Repository
         public IStudentRepository StudentRepository { get; private set; }
         public IReviewRepository ReviewRepository { get; private set; }
 
+        public ISubCategoryRepository SubCategoryRepository { get; private set; }
+
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
@@ -38,6 +40,7 @@ namespace Zaker_Academy.infrastructure.Repository
             InstructorRepository = new InstructorRepository(_context);
             StudentRepository = new StudentRepository(_context);
             ReviewRepository = new ReviewRepository(_context);
+            SubCategoryRepository = new SubCategoryRepository(_context);
         }
 
         public IDbTransaction BeginTransaction()

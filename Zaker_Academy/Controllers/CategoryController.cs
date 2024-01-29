@@ -37,14 +37,14 @@ namespace Zaker_Academy.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult> Get(int id)
         {
-            if (id is 0)
+            if (id <= 0)
                 return BadRequest();
             try
             {
                 var res = await CategoryService.GetById(id);
                 if (res.Data is null)
                     return NotFound();
-               
+
                 return Ok(res);
             }
             catch (Exception)
@@ -57,16 +57,16 @@ namespace Zaker_Academy.Controllers
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            if (id is 0)
+            if (id <= 0)
                 return BadRequest();
             if (!User.IsInRole("ADMIN"))
                 return Forbid();
             try
             {
                 var res = await CategoryService.Delete(id);
-                if (res.succeeded is false)
+                if (!res.succeeded)
                     return NotFound();
-             
+
                 return Ok();
             }
             catch (Exception)
@@ -76,9 +76,9 @@ namespace Zaker_Academy.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Put(int id , [FromBody] CategoryCreationDto category)
+        public async Task<IActionResult> Put(int id, [FromBody] CategoryCreationDto category)
         {
-            if (id is 0)
+            if (id <= 0)
                 return BadRequest();
             if (category is null)
                 return NoContent();
@@ -86,7 +86,7 @@ namespace Zaker_Academy.Controllers
                 return Forbid();
             try
             {
-                var res = await CategoryService.Update(id , category);
+                var res = await CategoryService.Update(id, category);
 
                 if (!res.succeeded)
                     return NotFound();
@@ -102,7 +102,7 @@ namespace Zaker_Academy.Controllers
         public async Task<IActionResult> Post([FromBody] CategoryCreationDto category)
         {
             if (category is null)
-               return BadRequest();
+                return BadRequest();
 
             if (!User.IsInRole("ADMIN"))
                 return Forbid();
@@ -119,6 +119,31 @@ namespace Zaker_Academy.Controllers
                 return StatusCode(500);
             }
         }
-        
+
+        [HttpPost("{id}/subcategory")]
+        public async Task<IActionResult> Post(int id ,[FromBody] SubCategoryCreationDto category)
+        {
+            if (category is null)
+                return BadRequest();
+
+            if (!User.IsInRole("ADMIN"))
+                return Forbid();
+            if (!Regex.IsMatch(category.Name, "^[A-Za-z&\\s]*$"))
+            {
+                return BadRequest();
+            }
+            try
+            {
+                var res = await CategoryService.CreateSubCategory(id, category);
+                if (!res.succeeded)
+                    return NotFound();
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
+        }
+
     }
 }
