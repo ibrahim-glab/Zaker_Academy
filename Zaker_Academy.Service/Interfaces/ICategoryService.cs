@@ -11,6 +11,8 @@ namespace Zaker_Academy.Service.Interfaces
     public interface ICategoryService
     {
         Task<ServiceResult<CategoryCreationDto>> Create(CategoryCreationDto categoryCreationDto);
+        Task<ServiceResult<SubCategoryCreationDto>> CreateSubCategory(int id, SubCategoryCreationDto categoryCreationDto);
+        Task<ServiceResult<List<SubCategoryDto>>> GetAllSubCategories(int CategoryId);
         Task<ServiceResult<string>> Delete(int id);
         Task<ServiceResult<IEnumerable<CategoryDto>>> GetAll();
         Task<ServiceResult<CategoryDto>> GetById(int id);

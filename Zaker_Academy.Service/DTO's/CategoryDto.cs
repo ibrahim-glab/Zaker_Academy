@@ -10,5 +10,6 @@ namespace Zaker_Academy.Service.DTO_s
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public List<SubCategoryDto>? subCategories { get; set; }
     }
 }

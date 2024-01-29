@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zaker_Academy.core.Entities;
 using Zaker_Academy.core.Interfaces;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service.DTO_s;
@@ -37,6 +38,26 @@ namespace Zaker_Academy.Service.Services
           
         }
 
+        public async Task<ServiceResult<SubCategoryCreationDto>> CreateSubCategory(int id, SubCategoryCreationDto categoryCreationDto)
+        {
+            try
+            {
+                var category = await _unitofwork.CategoryRepository.GetByIdAsync(id);
+                if (category is null)
+                    return new ServiceResult<SubCategoryCreationDto> { succeeded = false };
+                
+                await _unitofwork.SubCategoryRepository.Add(new SubCategory { Name = categoryCreationDto.Name, Category = category, CategoryId = id });
+                return new ServiceResult<SubCategoryCreationDto> { succeeded = true , Data =  categoryCreationDto };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+               
+        }
+            
+
         public async Task<ServiceResult<string>> Delete(int id)
         {
             try
@@ -58,14 +79,25 @@ namespace Zaker_Academy.Service.Services
         {
             try
             {
-              var categories =   await _unitofwork.CategoryRepository.GetAll();
-              var categoryDtos = categories.Select(s => new CategoryDto { Id = s.Id, Name = s.Name }).ToList();
+              var categories =   await _unitofwork.CategoryRepository.getByCondition(s=>1==1 ,new string[] { "SubCategories" });
+              var categoryDtos = categories.Select(s => new CategoryDto { Id = s.Id, Name = s.Name , subCategories = s.SubCategories?.Select(s=>new SubCategoryDto { Id = s.Id , Name = s.Name} ).ToList() }).ToList();
+               
+               
               return new ServiceResult<IEnumerable<CategoryDto>> { Data = categoryDtos, succeeded = true };
             }
             catch (Exception)
             {
                 throw;
             }
+        }
+
+        public async Task<ServiceResult<List<SubCategoryDto>>> GetAllSubCategories(int CategoryId)
+        {
+            var categories = await _unitofwork.SubCategoryRepository.getByCondition(s => s.CategoryId == CategoryId);
+            if (categories.Count() == 0)
+                return new ServiceResult<List<SubCategoryDto>> { succeeded = false };
+            var subcategoriesDto = categories.Select(s=> mapper.Map<SubCategoryDto>(s)).ToList();
+            return new ServiceResult<List<SubCategoryDto>> { Data = subcategoriesDto, succeeded = true };
         }
 
         public async Task<ServiceResult<CategoryDto>> GetById(int id)

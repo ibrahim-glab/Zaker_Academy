@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -7,6 +7,7 @@ using Zaker_Academy.infrastructure;
 using Zaker_Academy.infrastructure.Entities;
 using Zaker_Academy.Service;
 using Zaker_Academy.Service.Helper;
+using Zaker_Academy.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -83,5 +84,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapSubCategoryEndpoints();
 
 app.Run();
