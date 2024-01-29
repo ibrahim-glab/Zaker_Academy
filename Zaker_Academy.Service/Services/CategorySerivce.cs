@@ -75,6 +75,23 @@ namespace Zaker_Academy.Service.Services
             }
         }
 
+        public async Task<ServiceResult<string>> DeleteSubCategoryById(int id)
+        {
+            try
+            {
+                var category = await _unitofwork.SubCategoryRepository.GetByIdAsync(id);
+                if (category is null)
+                    return new ServiceResult<string> { succeeded = false };
+                await _unitofwork.SubCategoryRepository.Delete(category);
+                await _unitofwork.SaveChanges();
+                return new ServiceResult<string> { succeeded = true };
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public async Task<ServiceResult<IEnumerable<CategoryDto>>> GetAll()
         {
             try
@@ -114,6 +131,20 @@ namespace Zaker_Academy.Service.Services
             }
         }
 
+        public async Task<ServiceResult<SubCategoryDto>> GetSubCategoryById(int id)
+        {
+            try
+            {
+                var subcategory = mapper.Map<SubCategoryDto>(await _unitofwork.SubCategoryRepository.GetByIdAsync(id));
+
+                return new ServiceResult<SubCategoryDto> { Data = subcategory, succeeded = true };
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public async Task<ServiceResult<CategoryDto>> Update(int id, CategoryCreationDto creationDto)
         {
             try
@@ -124,6 +155,23 @@ namespace Zaker_Academy.Service.Services
                 category.Name = creationDto.Name;
                 await _unitofwork.SaveChanges();
                 return new ServiceResult<CategoryDto> { Data = mapper.Map<CategoryDto>(category), succeeded = true };
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<ServiceResult<SubCategoryDto>> Update(int id, SubCategoryCreationDto creationDto)
+        {
+            try
+            {
+                var category = await _unitofwork.SubCategoryRepository.GetByIdAsync(id);
+                if (category is null)
+                    return new ServiceResult<SubCategoryDto> { succeeded = false };
+                category.Name = creationDto.Name;
+                await _unitofwork.SaveChanges();
+                return new ServiceResult<SubCategoryDto> { Data = mapper.Map<SubCategoryDto>(category), succeeded = true };
             }
             catch (Exception)
             {

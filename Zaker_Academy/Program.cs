@@ -36,7 +36,7 @@ builder.Services.AddAuthentication(opt =>
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!)),
-        ClockSkew = TimeSpan.FromSeconds(300) // Give Token Fault Tolrence in Clock Sync     
+        ClockSkew = TimeSpan.FromSeconds(300) // Give Token Fault Tolerance in Clock Sync     
     };
 });
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -84,7 +84,4 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapSubCategoryEndpoints();
-
 app.Run();

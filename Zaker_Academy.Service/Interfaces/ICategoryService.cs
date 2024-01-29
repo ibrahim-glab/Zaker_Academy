@@ -16,6 +16,10 @@ namespace Zaker_Academy.Service.Interfaces
         Task<ServiceResult<string>> Delete(int id);
         Task<ServiceResult<IEnumerable<CategoryDto>>> GetAll();
         Task<ServiceResult<CategoryDto>> GetById(int id);
+        Task<ServiceResult<SubCategoryDto>> GetSubCategoryById(int id);
+        Task<ServiceResult<string>> DeleteSubCategoryById(int id);
+
         Task<ServiceResult<CategoryDto>> Update(int id , CategoryCreationDto creationDto);
+        Task<ServiceResult<SubCategoryDto>> Update(int id , SubCategoryCreationDto creationDto);
     }
 }

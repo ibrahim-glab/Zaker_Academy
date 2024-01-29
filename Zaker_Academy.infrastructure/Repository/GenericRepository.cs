@@ -111,7 +111,7 @@ namespace Zaker_Academy.infrastructure.Repository
 
         async Task<IEnumerable<T>> IGenericRepository<T>.GetAll()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
