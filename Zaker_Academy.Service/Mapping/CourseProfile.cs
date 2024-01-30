@@ -41,13 +41,74 @@ namespace Zaker_Academy.Service.Mapping
                 opt => opt.MapFrom(src => src.Discount)
                 ).ForMember(
                 dest => dest.startDate,
-                opt => opt.MapFrom(src => src.StartDate)
+                opt => opt.MapFrom(src => src.StartDate.ToDateTime(TimeOnly.MinValue))
                 ).ForMember(
                 dest => dest.endDate,
-                opt => opt.MapFrom(src => src.EndDate)
+                opt => opt.MapFrom(src => src.EndDate.ToDateTime(TimeOnly.MinValue))
                 ).ForMember(
                 dest => dest.CreatedAt,
                 opt => opt.MapFrom(src => DateTime.Now)
+                ).ForMember(
+                dest => dest.CategoryId,
+                opt => opt.MapFrom(src => src.CategoryId)
+                ).ForMember(
+                dest => dest.SubCategoryId,
+                opt => opt.MapFrom(src => src.SubCategoryId)
+                );
+            CreateMap<Course, CourseDto>().ForMember(
+                dest => dest.Price,
+                opt => opt.MapFrom(src => src.price)
+                ).ForMember(
+                dest => dest.Title,
+                opt => opt.MapFrom(src => src.Title)
+                ).ForMember(
+                dest => dest.Description,
+                opt => opt.MapFrom(src => src.Description)
+                ).ForMember(
+                dest => dest.EnrollmentCapacity,
+                opt => opt.MapFrom(src => src.enrollmentCapacity)
+                ).ForMember(
+                dest => dest.CourseStatus,
+                opt => opt.MapFrom(src => src.courseStatus)
+                ).ForMember(
+                dest => dest.EnrollmentCapacity,
+                opt => opt.MapFrom(src => src.enrollmentCapacity)
+                ).ForMember(
+                dest => dest.CourseDurationInHours,
+                opt => opt.MapFrom(src => src.courseDurationInHours)
+                ).ForMember(
+                dest => dest.ImageUrl,
+                opt => opt.MapFrom(src => src.imageUrl)
+                ).ForMember(
+                dest => dest.Price,
+                opt => opt.MapFrom(src => src.price)
+                ).ForMember(
+                dest => dest.Discount,
+                opt => opt.MapFrom(src => src.discount)
+                ).ForMember(
+                dest =>  dest.StartDate,
+                opt => opt.MapFrom(src => src.startDate)
+                ).ForMember(
+                dest => dest.EndDate,
+                opt => opt.MapFrom(src => src.endDate)
+                ).ForMember(
+                dest => dest.UpdatedAt,
+                opt => opt.MapFrom(src => src.UpdatedAt)
+                ).ForMember(
+                dest => dest.CategoryId,
+                opt => opt.MapFrom(src => src.CategoryId)
+                ).ForMember(
+                dest => dest.SubCategoryId,
+                opt => opt.MapFrom(src => src.SubCategoryId)
+                ).ForMember(
+                dest => dest.InsructorId,
+                opt => opt.MapFrom(src => src.InstructorId)
+                ).ForMember(
+                dest => dest.InstructorName,
+                opt => opt.MapFrom(src => src.Instructor.UserName)
+                ).ForMember(
+                dest => dest.CategoryName,
+                opt => opt.MapFrom(src => src.Category.Name)
                 );
         }
     }

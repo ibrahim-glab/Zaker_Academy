@@ -9,6 +9,7 @@ namespace Zaker_Academy.Service
         public static IServiceCollection Services(this IServiceCollection services)
         {
             services.AddTransient(typeof(IStudentService), typeof(StudentService));
+            services.AddTransient(typeof(ICourseService), typeof(CourseService));
             services.AddTransient(typeof(ICategoryService), typeof(CategorySerivce));
             services.AddTransient(typeof(IInstructorService), typeof(InstructorService));
             services.AddTransient(typeof(IAuthorizationService), typeof(AuthorizationService));

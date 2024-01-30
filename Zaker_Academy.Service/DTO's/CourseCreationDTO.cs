@@ -6,51 +6,42 @@ namespace Zaker_Academy.Service.DTO_s
     {
         [Required]
         [MaxLength(100)]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string Title { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-
+        [Required]
         [MaxLength(1000)]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string Description { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        [Required]
+        [Range(1, int.MaxValue)]
+        public int CategoryId { get; set; } = 0;
+        [Range(1, int.MaxValue)]
 
         [Required]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-        public string InstructorId { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-
+        public int EnrollmentCapacity { get; set; } = 0;
+        [MaxLength(100)]
         [Required]
-        public int CategoryId { get; set; }
-
-        [Required]
-        public int EnrollmentCapacity { get; set; }
-
-        [Required]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string CourseStatus { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        [Range(1, int.MaxValue)]
 
         [Required]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-        public string CourseDurationInHours { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public int CourseDurationInHours { get; set; } = 0;
 
         [Required]
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string ImageUrl { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        [Range(0, int.MaxValue)]
 
         [Required]
-        public decimal Price { get; set; }
+        public decimal Price { get; set; } = 0;
 
         [Required]
-        public decimal Discount { get; set; }
+        [Range(0, int.MaxValue)]
 
+        public decimal Discount { get; set; } = 0;
         [Required]
-        public DateTime StartDate { get; set; }
-
+        public bool Is_paid { get; set; }
         [Required]
-        public DateTime EndDate { get; set; }
+        public DateOnly StartDate { get; set; } 
+        [Required]
+        public DateOnly EndDate { get; set; } 
+        public Nullable<int> SubCategoryId { get; set; }
     }
 }

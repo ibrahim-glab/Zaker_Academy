@@ -251,6 +251,9 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<bool>("Is_paid")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("SubCategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -259,9 +262,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("courseDurationInHours")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("courseDurationInHours")
+                        .HasColumnType("int");
 
                     b.Property<string>("courseStatus")
                         .IsRequired()

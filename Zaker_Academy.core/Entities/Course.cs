@@ -16,7 +16,7 @@ namespace Zaker_Academy.infrastructure.Entities
 
         public int enrollmentCapacity { get; set; }
         public string courseStatus { get; set; }
-        public string courseDurationInHours { get; set; }
+        public int courseDurationInHours { get; set; }
         public string imageUrl { get; set; }
         public bool Is_paid { get; set; }
         public decimal price { get; set; }
@@ -34,15 +34,16 @@ namespace Zaker_Academy.infrastructure.Entities
         // Navigation properties
         public applicationUser Instructor { get; set; }
         public int CategoryId { get; set; }
+        public Nullable<int> SubCategoryId { get; set; }
 
 
         public Category? Category { get; set; }
 
-        public ICollection<Lesson> Lessons { get; set; }
-        public ICollection<Comment> Comments { get; set; } // Represents the lessons/modules within the course
+        public ICollection<Lesson>? Lessons { get; set; }
+        public ICollection<Comment>? Comments { get; set; } // Represents the lessons/modules within the course
 
         // Represents the lessons/modules within the course
-        public ICollection<applicationUser> Students { get; set; } // Represents the lessons/modules within the course
+        public ICollection<applicationUser>? Students { get; set; } // Represents the lessons/modules within the course
 
         public ICollection<Review>? Reviews { get; set; } // Represents reviews and ratings for the course
     }

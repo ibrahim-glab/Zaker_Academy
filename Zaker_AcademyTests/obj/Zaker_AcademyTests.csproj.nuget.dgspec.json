@@ -1,0 +1,437 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_AcademyTests\\Zaker_AcademyTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "projectName": "Zaker_Academy.core",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
+        "projectName": "Zaker_Academy.infrastructure",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
+        "projectName": "Zaker_Academy.Service",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              },
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_AcademyTests\\Zaker_AcademyTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_AcademyTests\\Zaker_AcademyTests.csproj",
+        "projectName": "Zaker_AcademyTests",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_AcademyTests\\Zaker_AcademyTests.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_AcademyTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
+        "projectName": "Zaker_Academy",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
+        "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj"
+              },
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.infrastructure\\Zaker_Academy.infrastructure.csproj"
+              },
+              "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj": {
+                "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.16.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
