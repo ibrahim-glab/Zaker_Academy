@@ -51,6 +51,8 @@ namespace Zaker_Academy.Service.Services
             }
 
             serviceResult = await _authorizationService.CreateTokenAsync(userDto.UserName);
+            user.LastLogin = DateTime.UtcNow;
+            await _unitOfWork.SaveChanges();
             serviceResult.succeeded = true;
             serviceResult.Message = "Login Succeeded";
             return serviceResult;
@@ -92,7 +94,8 @@ namespace Zaker_Academy.Service.Services
                 result.Message = "Failed to update profile";
                 return result;
             }
-
+            user.LastProfileUpdate = DateTime.UtcNow;
+            await _unitOfWork.SaveChanges();
             result.succeeded = true;
             result.Message = "Profile updated successfully";
             result.Data = _mapper.Map<UserDto>(user) ;

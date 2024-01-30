@@ -15,6 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<JwtHelper>(builder.Configuration.GetSection("JWT"));
 builder.Services.Configure<EmailHelper>(builder.Configuration.GetSection("EmailService"));
 builder.Services.AddAuthorization();
+builder.Services.AddSignalR();
 
 builder.Services.AddAuthentication(opt =>
 {
