@@ -233,7 +233,7 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseId"));
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
@@ -247,6 +247,9 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<string>("InstructorId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("Is_paid")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -703,7 +706,9 @@ namespace Zaker_Academy.infrastructure.Migrations
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Zaker_Academy.infrastructure.Entities.applicationUser", "Instructor")
                         .WithMany("InstructorCourses")
