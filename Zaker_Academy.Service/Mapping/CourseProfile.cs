@@ -95,20 +95,8 @@ namespace Zaker_Academy.Service.Mapping
                 dest => dest.UpdatedAt,
                 opt => opt.MapFrom(src => src.UpdatedAt)
                 ).ForMember(
-                dest => dest.CategoryId,
-                opt => opt.MapFrom(src => src.CategoryId)
-                ).ForMember(
-                dest => dest.SubCategoryId,
-                opt => opt.MapFrom(src => src.SubCategoryId)
-                ).ForMember(
-                dest => dest.InsructorId,
-                opt => opt.MapFrom(src => src.InstructorId)
-                ).ForMember(
-                dest => dest.InstructorName,
-                opt => opt.MapFrom(src => src.Instructor.UserName)
-                ).ForMember(
-                dest => dest.CategoryName,
-                opt => opt.MapFrom(src => src.Category.Name)
+                dest => dest.Id,
+                opt => opt.MapFrom(src => src.CourseId)
                 );
         }
     }

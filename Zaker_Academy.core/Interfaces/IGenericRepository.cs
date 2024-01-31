@@ -2,16 +2,17 @@
 
 namespace Zaker_Academy.core.Interfaces
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class 
     {
         Task<IEnumerable<T>> GetAll();
 
         Task Add(T entity);
 
-        Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition);
+        Task<IEnumerable<T>> GetByCondition(Expression<Func<T, bool>> condition);
 
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-        Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null);
+        Task<IEnumerable<T>> GetByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null);
+        Task<ICollection<TType>> GetByCondition<TType>(Expression<Func<T, bool>> condition,Expression<Func<T, TType>> select , string[] relatedEntities = null) where TType : class;
 #pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
 
         Task<IEnumerable<T>> GetPagedAsync(

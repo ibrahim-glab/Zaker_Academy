@@ -16,7 +16,6 @@ namespace Zaker_Academy.infrastructure.Repository
 
         public async Task BulkDelete(IEnumerable<T> entities)
         {
-#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 _context.Set<T>().RemoveRange(entities);
@@ -26,12 +25,10 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
-#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task BulkInsert(IEnumerable<T> entities)
         {
-#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 await _context.Set<T>().AddRangeAsync(entities);
@@ -41,12 +38,10 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
-#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task BulkUpdate(IEnumerable<T> entities)
         {
-#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 _context.Set<T>().UpdateRange(entities);
@@ -56,7 +51,6 @@ namespace Zaker_Academy.infrastructure.Repository
             {
                 // log this exception in the future
             }
-#pragma warning restore CS0168 // Variable is declared but never used
         }
 
         public async Task<bool> ExistsAsync(Expression<Func<T, bool>> condition)
@@ -93,7 +87,7 @@ namespace Zaker_Academy.infrastructure.Repository
             return resultList;
         }
 
-        public async Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition)
+        public async Task<IEnumerable<T>> GetByCondition(Expression<Func<T, bool>> condition)
         {
             return await _context.Set<T>().Where(condition).ToListAsync();
         }
@@ -121,9 +115,7 @@ namespace Zaker_Academy.infrastructure.Repository
             _context.Set<T>().Update(entity);
         }
 
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-        public async Task<IEnumerable<T>> getByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null)
-#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
+        public async Task<IEnumerable<T>> GetByCondition(Expression<Func<T, bool>> condition, string[] relatedEntities = null)
         {
             IQueryable<T> res = _context.Set<T>();
 
@@ -141,6 +133,19 @@ namespace Zaker_Academy.infrastructure.Repository
         public async Task<T?> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
+        }
+
+        public async Task<ICollection<TType>> GetByCondition<TType>(Expression<Func<T, bool>> condition, Expression<Func<T, TType>> select, string[] relatedEntities = null) where TType : class
+        {
+            IQueryable<T> res = _context.Set<T>();
+            if (relatedEntities != null)
+            {
+                foreach (var related in relatedEntities)
+                {
+                    res = res.Include(related);
+                }
+            }
+            return await res.Where(condition).Select(select).ToListAsync();
         }
     }
 }

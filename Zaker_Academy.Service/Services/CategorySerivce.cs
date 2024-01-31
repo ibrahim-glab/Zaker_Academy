@@ -96,7 +96,7 @@ namespace Zaker_Academy.Service.Services
         {
             try
             {
-              var categories =   await _unitofwork.CategoryRepository.getByCondition(s=>1==1 ,new string[] { "SubCategories" });
+              var categories =   await _unitofwork.CategoryRepository.GetByCondition(s=>1==1 ,new string[] { "SubCategories" });
               var categoryDtos = categories.Select(s => new CategoryDto { Id = s.Id, Name = s.Name , subCategories = s.SubCategories?.Select(s=>new SubCategoryDto { Id = s.Id , Name = s.Name} ).ToList() }).ToList();
                
                
@@ -110,7 +110,7 @@ namespace Zaker_Academy.Service.Services
 
         public async Task<ServiceResult<List<SubCategoryDto>>> GetAllSubCategories(int CategoryId)
         {
-            var categories = await _unitofwork.SubCategoryRepository.getByCondition(s => s.CategoryId == CategoryId);
+            var categories = await _unitofwork.SubCategoryRepository.GetByCondition(s => s.CategoryId == CategoryId);
             if (categories.Count() == 0)
                 return new ServiceResult<List<SubCategoryDto>> { succeeded = false };
             var subcategoriesDto = categories.Select(s=> mapper.Map<SubCategoryDto>(s)).ToList();

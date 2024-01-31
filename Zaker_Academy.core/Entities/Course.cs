@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Zaker_Academy.core.Entities;
 
 namespace Zaker_Academy.infrastructure.Entities
 {
@@ -34,10 +35,9 @@ namespace Zaker_Academy.infrastructure.Entities
         // Navigation properties
         public applicationUser Instructor { get; set; }
         public int CategoryId { get; set; }
-        public Nullable<int> SubCategoryId { get; set; }
-
-
-        public Category? Category { get; set; }
+        public int SubCategoryId { get; set; }
+        public Category Category { get; set; }
+        public SubCategory SubCategory { get; set; }
 
         public ICollection<Lesson>? Lessons { get; set; }
         public ICollection<Comment>? Comments { get; set; } // Represents the lessons/modules within the course

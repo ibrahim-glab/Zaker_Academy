@@ -47,10 +47,15 @@ namespace Zaker_Academy.Service.Services
 
         public async Task<ServiceResult<CourseDto>> GetCourse(int Course_id)
         {
-            var coures = await unitOfWork.CourseRepository.getByCondition(s=>s.CourseId == Course_id , new string[] { "Instructor" , "Category" });
+            var coures = await unitOfWork.CourseRepository.GetByCondition(s=>s.CourseId == Course_id, new[] {"Category" , "SubCategory");
             if (coures is null)
                 return new ServiceResult<CourseDto> { succeeded = false };
+            var Course = coures.First();
+            var instructor = await unitOfWork.InstructorRepository.GetByCondition(s => s.Id == Course.InstructorId, s => new { s.Id, s.FirstName, s.LastName });
             var courseDto = mapper.Map<CourseDto>(coures.FirstOrDefault());
+            courseDto.Insructor = instructor;
+            courseDto.Category = new {id = Course.Category.Id , Name = Course.Category.Name };
+            courseDto.SubCategory = new { id = Course.SubCategoryId, Course.SubCategory.Name };
             return new ServiceResult<CourseDto> { Data = courseDto, succeeded = true };
         }
     }

@@ -251,7 +251,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.Property<bool>("Is_paid")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("SubCategoryId")
+                    b.Property<int>("SubCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -293,6 +293,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("InstructorId");
+
+                    b.HasIndex("SubCategoryId");
 
                     b.ToTable("Courses");
                 });
@@ -718,9 +720,17 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Zaker_Academy.core.Entities.SubCategory", "SubCategory")
+                        .WithMany()
+                        .HasForeignKey("SubCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
 
                     b.Navigation("Instructor");
+
+                    b.Navigation("SubCategory");
                 });
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.EnrollmentCourses", b =>
