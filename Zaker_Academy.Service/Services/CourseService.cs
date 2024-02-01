@@ -29,15 +29,6 @@ namespace Zaker_Academy.Service.Services
             if (course.SubCategoryId is not null )
                 if(await unitOfWork.CategoryRepository.GetByIdAsync(course.CategoryId) is null)
                     return new ServiceResult<CourseDto> { succeeded = false, Error = "Invalid SubCategory Id" };
-            //var Course = new Course { 
-            //    CategoryId = course.CategoryId ,
-            //    InstructorId = userid ,
-            //    endDate =  course.EndDate.ToDateTime(TimeOnly.MinValue) ,
-            //    startDate = course.StartDate.ToDateTime(TimeOnly.MinValue) ,
-            //    courseDurationInHours = course.CourseDurationInHours,
-            //    courseStatus = course.CourseStatus,
-            //    Description = course.Description
-            //}
             var Course = mapper.Map<Course>(course);
             Course.InstructorId = userid;
             await unitOfWork.CourseRepository.Add(Course);
@@ -45,9 +36,49 @@ namespace Zaker_Academy.Service.Services
             return new ServiceResult<CourseDto> { succeeded = true };
         }
 
+        public async Task<ServiceResult<ICollection<CourseDto>>> GetAllCourse()
+        {
+            try
+            {
+                var Courses = await unitOfWork.CourseRepository.GetByCondition(s => true, course => new CourseDto
+                {
+                    Id = course.CourseId,
+                    Title = course.Title,
+                    Description = course.Description,
+                    EnrollmentCapacity = course.enrollmentCapacity,
+                    CourseStatus = course.courseStatus,
+                    CourseDurationInHours = course.courseDurationInHours,
+                    ImageUrl = course.imageUrl,
+                    Is_paid = course.Is_paid,
+                    Price = course.price,
+                    Discount = course.discount,
+                    StartDate = course.startDate,
+                    EndDate = course.endDate,
+                    UpdatedAt = course.UpdatedAt,
+
+                    // Include only specific columns from the Instructor navigation property
+                    Insructor = new
+                    {
+                        Id = course.Instructor.Id,
+                        InstructorName = $"{course.Instructor.FirstName} {course.Instructor.LastName}",
+                    },
+                    Category = new { Id = course.Category.Id, Name = course.Category.Name },
+                    SubCategory = new { Id = course.SubCategoryId!, Name = course.SubCategory.Name },
+                }, new[] { "Category", "SubCategory", "Instructor" });
+                return new ServiceResult<ICollection<CourseDto>> { succeeded = true, Data = Courses };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+           
+        }
+
         public async Task<ServiceResult<CourseDto>> GetCourse(int Course_id)
         {
-            var coures = await unitOfWork.CourseRepository.GetByCondition(s=>s.CourseId == Course_id, new[] {"Category" , "SubCategory");
+            var coures = await unitOfWork.CourseRepository.GetByCondition(s=>s.CourseId == Course_id, new[] { "Category", "SubCategory" });
             if (coures is null)
                 return new ServiceResult<CourseDto> { succeeded = false };
             var Course = coures.First();

@@ -44,11 +44,9 @@ namespace Zaker_Academy.Controllers
             }                    
         }
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> Post(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-            if (id == 0)
+         if (id == 0)
                 return BadRequest();
             
             try
@@ -64,6 +62,26 @@ namespace Zaker_Academy.Controllers
                 return StatusCode(500); ;
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+           
+
+            try
+            {
+                var res = await courseService.GetAllCourse();
+               
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500); ;
+            }
+        }
+
 
     }
 }

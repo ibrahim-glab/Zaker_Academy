@@ -7,5 +7,6 @@ namespace Zaker_Academy.Service.Interfaces
     {
         Task<ServiceResult<CourseDto>> Create(string userid,CourseCreationDTO creationDTO);
         Task<ServiceResult<CourseDto>> GetCourse(int Course_id);
+        Task<ServiceResult<ICollection<CourseDto>>> GetAllCourse();
     }
 }
