@@ -4,7 +4,8 @@ namespace Zaker_Academy.core.Interfaces
 {
     public interface IGenericRepository<T> where T : class 
     {
-        Task<IEnumerable<T>> GetAll();
+        Task<IEnumerable<T>> GetAll(string[] relatedEntities = null);
+        Task<IEnumerable<TType>> GetAll<TType>(Expression<Func<T, TType>> select , string[] relatedEntities = null) where TType : class;
 
         Task Add(T entity);
 

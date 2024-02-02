@@ -174,5 +174,8 @@ namespace Zaker_Academy.Service.Services
 
             return new ServiceResult<UserDto> {succeeded = true , Data = _mapper.Map<UserDto>(user) };
         }
+
+
+
     }
 }

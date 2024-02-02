@@ -103,11 +103,7 @@ namespace Zaker_Academy.infrastructure.Repository
             _context.Set<T>().Remove(entity);
         }
 
-        async Task<IEnumerable<T>> IGenericRepository<T>.GetAll()
-        {
-            return await _context.Set<T>().AsNoTracking().ToListAsync();
-        }
-
+      
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         async Task IGenericRepository<T>.Update(T entity)
 #pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
@@ -146,6 +142,33 @@ namespace Zaker_Academy.infrastructure.Repository
                 }
             }
             return await res.Where(condition).Select(select).ToListAsync();
+        }
+
+      
+        public async Task<IEnumerable<TType>> GetAll<TType>(Expression<Func<T, TType>> select, string[] relatedEntities = null) where TType :class
+        {
+            IQueryable<T> res = _context.Set<T>();
+            if (relatedEntities != null)
+            {
+                foreach (var related in relatedEntities)
+                {
+                    res = res.Include(related);
+                }
+            }
+            return await res.Select(select).AsNoTracking().ToListAsync();
+        }
+
+        public async Task<IEnumerable<T>> GetAll(string[] relatedEntities = null)
+        {
+            IQueryable<T> res = _context.Set<T>();
+            if (relatedEntities != null)
+            {
+                foreach (var related in relatedEntities)
+                {
+                    res = res.Include(related);
+                }
+            }
+            return await res.AsNoTracking().ToListAsync();
         }
     }
 }

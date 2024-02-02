@@ -98,6 +98,8 @@ namespace Zaker_Academy.Service.Mapping
                 dest => dest.Id,
                 opt => opt.MapFrom(src => src.CourseId)
                 );
+          
+               
         }
     }
 }

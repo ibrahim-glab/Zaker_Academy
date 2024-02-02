@@ -40,11 +40,10 @@ namespace Zaker_Academy.infrastructure.Entities
         public SubCategory SubCategory { get; set; }
 
         public ICollection<Lesson>? Lessons { get; set; }
-        public ICollection<Comment>? Comments { get; set; } // Represents the lessons/modules within the course
+        public ICollection<Comment>? Comments { get; set; }
 
-        // Represents the lessons/modules within the course
-        public ICollection<applicationUser>? Students { get; set; } // Represents the lessons/modules within the course
+        public ICollection<applicationUser>? Students { get; set; } 
 
-        public ICollection<Review>? Reviews { get; set; } // Represents reviews and ratings for the course
+        public ICollection<Review>? Reviews { get; set; } 
     }
 }

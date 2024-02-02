@@ -53,7 +53,7 @@ namespace Zaker_Academy.Controllers
             {
                 var res = await courseService.GetCourse(id);
                 if (!res.succeeded)
-                    return BadRequest(res);
+                    return NotFound(res);
                 return Ok(res);
             }
             catch (Exception)
@@ -62,22 +62,55 @@ namespace Zaker_Academy.Controllers
                 return StatusCode(500); ;
             }
         }
+        
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-           
-
             try
             {
-                var res = await courseService.GetAllCourse();
-               
+                var res = await courseService.GetAllCourse();             
                 return Ok(res);
             }
             catch (Exception)
             {
-
+                return StatusCode(500); ;
+            }
+        }
+        [Authorize(Roles ="Instructor")]
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id , [FromBody] CourseBasicUpdateDto courseDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            try
+            {
+                var res = await courseService.Update(id , courseDto);
+                if (!res.succeeded)
+                    return BadRequest(res);
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500); ;
+            }
+        }
+        [Authorize(Roles = "Instructor")]
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            try
+            {
+                var res = await courseService.Delete(id);
+                if (!res.succeeded)
+                    return NotFound(res);
+                return Ok(res);
+            }
+            catch (Exception e)
+            {
                 return StatusCode(500); ;
             }
         }
