@@ -155,6 +155,35 @@ namespace Zaker_Academy.infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Zaker_Academy.core.Entities.Chapter", b =>
+                {
+                    b.Property<int>("ChapterId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChapterId"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ChapterId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Chapter");
+                });
+
             modelBuilder.Entity("Zaker_Academy.core.Entities.SubCategory", b =>
                 {
                     b.Property<int>("Id")
@@ -336,6 +365,9 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
@@ -345,9 +377,6 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .HasColumnType("nvarchar(1000)");
 
                     b.Property<int>("LessonDuration")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderInCourse")
                         .HasColumnType("int");
 
                     b.Property<string>("ResourcesUrl")
@@ -361,9 +390,9 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CourseId");
+                    b.HasIndex("ChapterId");
 
-                    b.HasIndex("OrderInCourse");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Lessons");
                 });
@@ -682,6 +711,17 @@ namespace Zaker_Academy.infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Zaker_Academy.core.Entities.Chapter", b =>
+                {
+                    b.HasOne("Zaker_Academy.infrastructure.Entities.Course", "Course")
+                        .WithMany("Chapters")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
             modelBuilder.Entity("Zaker_Academy.core.Entities.SubCategory", b =>
                 {
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Category", "Category")
@@ -754,8 +794,14 @@ namespace Zaker_Academy.infrastructure.Migrations
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Lesson", b =>
                 {
+                    b.HasOne("Zaker_Academy.core.Entities.Chapter", null)
+                        .WithMany()
+                        .HasForeignKey("ChapterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Zaker_Academy.infrastructure.Entities.Course", "Course")
-                        .WithMany("Lessons")
+                        .WithMany()
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -854,9 +900,9 @@ namespace Zaker_Academy.infrastructure.Migrations
 
             modelBuilder.Entity("Zaker_Academy.infrastructure.Entities.Course", b =>
                 {
-                    b.Navigation("Comments");
+                    b.Navigation("Chapters");
 
-                    b.Navigation("Lessons");
+                    b.Navigation("Comments");
 
                     b.Navigation("Reviews");
 

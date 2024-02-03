@@ -39,7 +39,7 @@ namespace Zaker_Academy.infrastructure.Entities
         public Category Category { get; set; }
         public SubCategory SubCategory { get; set; }
 
-        public ICollection<Lesson>? Lessons { get; set; }
+        public ICollection<Chapter>? Chapters { get; set; }
         public ICollection<Comment>? Comments { get; set; }
 
         public ICollection<applicationUser>? Students { get; set; } 

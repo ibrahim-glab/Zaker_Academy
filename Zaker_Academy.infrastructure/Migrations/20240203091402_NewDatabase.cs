@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace Zaker_Academy.infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class @new : Migration
+    public partial class NewDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -28,30 +29,13 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "categories",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    description = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_categories", x => x.id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "EnrollmentCourses",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StudentId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    EnrolmentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CompleteIt = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EnrollmentCourses", x => x.id);
+                    table.PrimaryKey("PK_categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -71,6 +55,26 @@ namespace Zaker_Academy.infrastructure.Migrations
                         name: "FK_AspNetRoleClaims_AspNetRoles_RoleId",
                         column: x => x.RoleId,
                         principalTable: "AspNetRoles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SubCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SubCategories", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_SubCategories_categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -129,7 +133,7 @@ namespace Zaker_Academy.infrastructure.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateOfBirth = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     Gender = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     imageURL = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     LastLogin = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -186,8 +190,9 @@ namespace Zaker_Academy.infrastructure.Migrations
                     Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     enrollmentCapacity = table.Column<int>(type: "int", nullable: false),
                     courseStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    courseDurationInHours = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    courseDurationInHours = table.Column<int>(type: "int", nullable: false),
                     imageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Is_paid = table.Column<bool>(type: "bit", nullable: false),
                     price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     startDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -195,7 +200,8 @@ namespace Zaker_Academy.infrastructure.Migrations
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Categoryid = table.Column<int>(type: "int", nullable: true)
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    SubCategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -207,10 +213,39 @@ namespace Zaker_Academy.infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Courses_categories_Categoryid",
-                        column: x => x.Categoryid,
+                        name: "FK_Courses_SubCategories_SubCategoryId",
+                        column: x => x.SubCategoryId,
+                        principalTable: "SubCategories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Courses_categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "categories",
-                        principalColumn: "id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Chapter",
+                columns: table => new
+                {
+                    ChapterId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Order = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Chapter", x => x.ChapterId);
+                    table.ForeignKey(
+                        name: "FK_Chapter_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -222,37 +257,46 @@ namespace Zaker_Academy.infrastructure.Migrations
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    applicationUserId = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    applicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comments", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Comments_AspNetUsers_applicationUserId",
+                        column: x => x.applicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Comments_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Lessons",
+                name: "EnrollmentCourses",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    applicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    LessonDuration = table.Column<int>(type: "int", nullable: false),
-                    OrderInCourse = table.Column<int>(type: "int", nullable: false),
-                    ResourcesUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    EnrolmentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CompleteIt = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Lessons", x => x.Id);
+                    table.PrimaryKey("PK_EnrollmentCourses", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Lessons_Courses_CourseId",
+                        name: "FK_EnrollmentCourses_AspNetUsers_applicationUserId",
+                        column: x => x.applicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_EnrollmentCourses_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
@@ -281,6 +325,36 @@ namespace Zaker_Academy.infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Lessons",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    ChapterId = table.Column<int>(type: "int", nullable: false),
+                    LessonDuration = table.Column<int>(type: "int", nullable: false),
+                    ResourcesUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Lessons", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Lessons_Chapter_ChapterId",
+                        column: x => x.ChapterId,
+                        principalTable: "Chapter",
+                        principalColumn: "ChapterId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Lessons_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Replies",
                 columns: table => new
                 {
@@ -289,17 +363,23 @@ namespace Zaker_Academy.infrastructure.Migrations
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CommentId = table.Column<int>(type: "int", nullable: false),
-                    applicationUserId = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    applicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Replies", x => x.ReplyId);
                     table.ForeignKey(
+                        name: "FK_Replies_AspNetUsers_applicationUserId",
+                        column: x => x.applicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Replies_Comments_CommentId",
                         column: x => x.CommentId,
                         principalTable: "Comments",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -436,19 +516,49 @@ namespace Zaker_Academy.infrastructure.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Chapter_CourseId",
+                table: "Chapter",
+                column: "CourseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Comments_applicationUserId",
+                table: "Comments",
+                column: "applicationUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Comments_CourseId",
                 table: "Comments",
                 column: "CourseId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Courses_Categoryid",
+                name: "IX_Courses_CategoryId",
                 table: "Courses",
-                column: "Categoryid");
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Courses_InstructorId",
                 table: "Courses",
                 column: "InstructorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Courses_SubCategoryId",
+                table: "Courses",
+                column: "SubCategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EnrollmentCourses_applicationUserId",
+                table: "EnrollmentCourses",
+                column: "applicationUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EnrollmentCourses_CourseId",
+                table: "EnrollmentCourses",
+                column: "CourseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Lessons_ChapterId",
+                table: "Lessons",
+                column: "ChapterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Lessons_CourseId",
@@ -471,6 +581,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                 column: "LessonId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Replies_applicationUserId",
+                table: "Replies",
+                column: "applicationUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Replies_CommentId",
                 table: "Replies",
                 column: "CommentId");
@@ -489,6 +604,11 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "IX_studentQuizScores_studentId",
                 table: "studentQuizScores",
                 column: "studentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubCategories_CategoryId",
+                table: "SubCategories",
+                column: "CategoryId");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUserClaims_AspNetUsers_UserId",
@@ -575,10 +695,16 @@ namespace Zaker_Academy.infrastructure.Migrations
                 name: "Lessons");
 
             migrationBuilder.DropTable(
+                name: "Chapter");
+
+            migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "Courses");
+
+            migrationBuilder.DropTable(
+                name: "SubCategories");
 
             migrationBuilder.DropTable(
                 name: "categories");

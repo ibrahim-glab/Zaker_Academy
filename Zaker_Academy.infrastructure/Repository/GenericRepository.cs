@@ -47,9 +47,9 @@ namespace Zaker_Academy.infrastructure.Repository
                 _context.Set<T>().UpdateRange(entities);
                 await _context.SaveChangesAsync();
             }
-            catch (Exception e)
+            catch (DbUpdateException e)
             {
-                // log this exception in the future
+                throw ;
             }
         }
 

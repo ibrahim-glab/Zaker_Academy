@@ -23,7 +23,7 @@ namespace Zaker_Academy.Service.Services
             instructorStore = userStore;
             this.mapper = mapper;
         }
-
+      
         public async Task<ServiceResult<string>> AddLesson(int course_id, LessonCreationDto lesson)
         {
             var transction =  unitOfWork.BeginTransaction();
@@ -32,15 +32,7 @@ namespace Zaker_Academy.Service.Services
                 var course = await unitOfWork.CourseRepository.GetByCondition(c => c.CourseId == course_id, sel => new { sel.CourseId });
                 if (!course.Any())
                     return new ServiceResult<string> { succeeded = false, Error = "The Course Not Found" };
-                var LessonOrderCheck = await unitOfWork.LessonRepository.GetByCondition(l => l.OrderInCourse >= lesson.OrderInCourse);
-                if (LessonOrderCheck.Any())
-                {
-                    foreach (var item in LessonOrderCheck)
-                    {
-                        item.OrderInCourse += 1;
-                    }
-                   
-                }
+             
                 var Lesson = mapper.Map<Lesson>(lesson);
                 Lesson.CourseId = course_id;
                 await unitOfWork.LessonRepository.Add(Lesson);
@@ -99,9 +91,7 @@ namespace Zaker_Academy.Service.Services
                     Discount = course.discount,
                     StartDate = course.startDate,
                     EndDate = course.endDate,
-                    UpdatedAt = course.UpdatedAt,
-
-                    // Include only specific columns from the Instructor navigation property
+                    UpdatedAt = course.UpdatedAt,     
                     Insructor = new
                     {
                         Id = course.Instructor.Id,
@@ -141,21 +131,32 @@ namespace Zaker_Academy.Service.Services
             if (!course.Any())
                 return new ServiceResult<ICollection<LessonDto>> { succeeded = false, Error = "The Course Not Found" };
             var Lessons = await unitOfWork.LessonRepository.GetByCondition(Les => Les.CourseId == course_id, sel => mapper.Map<LessonDto>(sel));
-            //var Lessons = await unitOfWork.LessonRepository.GetPagedAsync(Les => Les.CourseId == course_id, sel => mapper.Map<LessonDto>(sel), 2, 5, l => l.OrderInCourse, true);
             return new ServiceResult<ICollection<LessonDto>> { succeeded = true, Data = Lessons };
            
         }
 
         public async Task<ServiceResult<LessonDto>> UpadteRelatedLesson(int course_id, LessonDto lessonDto)
         {
+
+            var transction = unitOfWork.BeginTransaction();
+            try
+            {
+                var les = await unitOfWork.LessonRepository.GetByCondition(l => l.Id == lessonDto.Id && l.CourseId == course_id);
+                if (!les.Any())
+                    return new ServiceResult<LessonDto> { succeeded = false, Error = "The Lesson Not Found" };
+               var lesson1 = les.First();
+               var lesson = mapper.Map<LessonDto, Lesson>(lessonDto, les.First());
+                await unitOfWork.LessonRepository.Update(lesson);
+                await unitOfWork.SaveChanges();
+                transction.Commit();
+                return new ServiceResult<LessonDto> { succeeded = true, Data = lessonDto };
+            }
+            catch (Exception)
+            {
+                transction.Rollback();
+                throw;
+            }
            
-            var les = await unitOfWork.LessonRepository.GetByCondition(l=> l.Id == lessonDto.Id && l.CourseId ==course_id);
-            if (!les.Any())
-                return new ServiceResult<LessonDto> { succeeded = false, Error = "The Lesson Not Found" };
-            var lesson = mapper.Map<LessonDto, Lesson>(lessonDto , les.First());
-            await unitOfWork.LessonRepository.Update(lesson);
-            await unitOfWork.SaveChanges();
-            return new ServiceResult<LessonDto> { succeeded = true, Data = lessonDto };
 
                 
                     
@@ -167,13 +168,28 @@ namespace Zaker_Academy.Service.Services
             if (course is null)
                 return new ServiceResult<string> { succeeded = false, Message = "The Course Not found" };
             var Course = mapper.Map<CourseBasicUpdateDto , Course>(courseUpdate , course);
-            // UpdateCourseProperties(course, courseUpdate);
             await unitOfWork.CourseRepository.Update(Course);
             course.UpdatedAt = DateTime.UtcNow;
             await unitOfWork.SaveChanges();
             return new ServiceResult<string> { succeeded = true };
         }
-       
 
+        public async Task<ServiceResult<List<LessonDto>>> UpdateRelatedLessons(int course_id, List<LessonDto> lessonDto)
+        {
+            var newlessons = new List<Lesson>();
+            foreach (var item in lessonDto)
+            {
+                var lesson = await unitOfWork.LessonRepository.GetByCondition(l => l.CourseId == course_id && l.Id == item.Id);
+                if (lesson.Any())
+                {
+                    var Lesson = mapper.Map<LessonDto, Lesson>(item, lesson.First());
+                    newlessons.Add(Lesson);
+                }
+            }
+            if (newlessons.Count == 0)
+                return new ServiceResult<List<LessonDto>> { succeeded = false };
+            await unitOfWork.LessonRepository.BulkUpdate(newlessons);
+            return new ServiceResult<List<LessonDto>> { succeeded = true, Data = lessonDto };
         }
+    }
 }

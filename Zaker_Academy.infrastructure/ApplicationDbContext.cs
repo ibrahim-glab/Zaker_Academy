@@ -24,7 +24,8 @@ namespace Zaker_Academy.infrastructure
             modelBuilder.Entity<Comment>().HasOne<applicationUser>().WithMany();
             modelBuilder.Entity<Reply>().HasOne<applicationUser>().WithMany();
             modelBuilder.Entity<Course>().HasMany(c => c.Comments).WithOne();
-            modelBuilder.Entity<Lesson>().HasIndex(p => p.OrderInCourse);
+            modelBuilder.Entity<Lesson>().HasOne<Chapter>().WithMany().OnDelete(DeleteBehavior.Cascade);
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

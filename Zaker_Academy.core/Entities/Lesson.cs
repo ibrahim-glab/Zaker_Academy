@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Zaker_Academy.core.Entities;
 
 namespace Zaker_Academy.infrastructure.Entities
 {
@@ -16,10 +18,9 @@ namespace Zaker_Academy.infrastructure.Entities
 
         [Required]
         public int CourseId { get; set; } // Foreign key to link the lesson to a course
-
+        [Required]
+        public int ChapterId { get; set; } // Foreign key to link the lesson to a course
         public int LessonDuration { get; set; } // Duration of the lesson in minutes
-
-        public int OrderInCourse { get; set; } // Order of the lesson within the course
 
         public string ResourcesUrl { get; set; } // URL for additional resources
 

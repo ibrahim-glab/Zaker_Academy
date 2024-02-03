@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -172,6 +173,26 @@ namespace Zaker_Academy.Controllers
             catch (Exception)
             {
                 return StatusCode(500); ;
+            }
+        }
+
+        [Authorize(Roles = "Instructor")]
+        [HttpPut("{id:int}/Lessons/UpdateLessons")]
+        public async Task<IActionResult> UpdateLessons(int id, [FromBody] List<LessonDto> lessonsDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            try
+            {
+                var res = await courseService.UpdateRelatedLessons(id, lessonsDto);
+                if (!res.succeeded)
+                    return NotFound(res);
+                return Ok(res);
+            }
+            catch (DbUpdateException e)
+            {
+
+                return StatusCode(500 ,e.StackTrace); ;
             }
         }
     }
