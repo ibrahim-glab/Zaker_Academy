@@ -66,13 +66,19 @@ namespace Zaker_Academy.infrastructure.Repository
             return t;
         }
 
-        public async Task<IEnumerable<T>> GetPagedAsync(Expression<Func<T, bool>> condition, int pageNumber, int pageSize, Expression<Func<T, object>> orderBy, bool ascending = true)
+        public async Task<ICollection<TType>> GetPagedAsync<TType>(
+    Expression<Func<T, bool>> condition,
+     Expression<Func<T, TType>> select,
+    int pageNumber,
+    int pageSize,
+    Expression<Func<T, object>> orderBy,
+    bool ascending = true) where TType : class
         {
-            IQueryable<T> query = _context.Set<T>();
-
+            IQueryable<T> query = _context.Set<T>().AsNoTracking();
+            var res  = new List<TType>();
             if (condition != null)
             {
-                query = query.Where(condition);
+                query =  query.Where(condition);
             }
 
             query = ascending
@@ -82,6 +88,8 @@ namespace Zaker_Academy.infrastructure.Repository
             var resultList = await query
                 .Skip(pageSize * (pageNumber - 1))
                 .Take(pageSize)
+                .AsNoTracking()
+                .Select(select)
                 .ToListAsync();
 
             return resultList;

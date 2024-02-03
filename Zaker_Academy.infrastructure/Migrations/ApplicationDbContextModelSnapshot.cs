@@ -363,6 +363,8 @@ namespace Zaker_Academy.infrastructure.Migrations
 
                     b.HasIndex("CourseId");
 
+                    b.HasIndex("OrderInCourse");
+
                     b.ToTable("Lessons");
                 });
 

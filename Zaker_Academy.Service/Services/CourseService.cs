@@ -24,6 +24,38 @@ namespace Zaker_Academy.Service.Services
             this.mapper = mapper;
         }
 
+        public async Task<ServiceResult<string>> AddLesson(int course_id, LessonCreationDto lesson)
+        {
+            var transction =  unitOfWork.BeginTransaction();
+            try
+            {
+                var course = await unitOfWork.CourseRepository.GetByCondition(c => c.CourseId == course_id, sel => new { sel.CourseId });
+                if (!course.Any())
+                    return new ServiceResult<string> { succeeded = false, Error = "The Course Not Found" };
+                var LessonOrderCheck = await unitOfWork.LessonRepository.GetByCondition(l => l.OrderInCourse >= lesson.OrderInCourse);
+                if (LessonOrderCheck.Any())
+                {
+                    foreach (var item in LessonOrderCheck)
+                    {
+                        item.OrderInCourse += 1;
+                    }
+                   
+                }
+                var Lesson = mapper.Map<Lesson>(lesson);
+                Lesson.CourseId = course_id;
+                await unitOfWork.LessonRepository.Add(Lesson);
+                await unitOfWork.SaveChanges();
+                transction.Commit();
+                return new ServiceResult<string> { succeeded = true };
+            }
+            catch (Exception)
+            {
+                transction.Rollback();
+                throw;
+            }
+            
+        }
+
         public async Task<ServiceResult<CourseDto>> Create(string userid, CourseCreationDTO course)
         {
             if (await unitOfWork.CategoryRepository.GetByIdAsync(course.CategoryId) is null)
@@ -103,28 +135,45 @@ namespace Zaker_Academy.Service.Services
             return new ServiceResult<CourseDto> { Data = courseDto, succeeded = true };
         }
 
+        public async Task<ServiceResult<ICollection<LessonDto>>> GetRelatedLessons(int course_id)
+        {
+            var course = await unitOfWork.CourseRepository.GetByCondition(c => c.CourseId == course_id, sel => new { sel.CourseId });
+            if (!course.Any())
+                return new ServiceResult<ICollection<LessonDto>> { succeeded = false, Error = "The Course Not Found" };
+            var Lessons = await unitOfWork.LessonRepository.GetByCondition(Les => Les.CourseId == course_id, sel => mapper.Map<LessonDto>(sel));
+            //var Lessons = await unitOfWork.LessonRepository.GetPagedAsync(Les => Les.CourseId == course_id, sel => mapper.Map<LessonDto>(sel), 2, 5, l => l.OrderInCourse, true);
+            return new ServiceResult<ICollection<LessonDto>> { succeeded = true, Data = Lessons };
+           
+        }
+
+        public async Task<ServiceResult<LessonDto>> UpadteRelatedLesson(int course_id, LessonDto lessonDto)
+        {
+           
+            var les = await unitOfWork.LessonRepository.GetByCondition(l=> l.Id == lessonDto.Id && l.CourseId ==course_id);
+            if (!les.Any())
+                return new ServiceResult<LessonDto> { succeeded = false, Error = "The Lesson Not Found" };
+            var lesson = mapper.Map<LessonDto, Lesson>(lessonDto , les.First());
+            await unitOfWork.LessonRepository.Update(lesson);
+            await unitOfWork.SaveChanges();
+            return new ServiceResult<LessonDto> { succeeded = true, Data = lessonDto };
+
+                
+                    
+        }
+
         public async Task<ServiceResult<string>> Update(int course_id, CourseBasicUpdateDto courseUpdate)
         {
             var course = await unitOfWork.CourseRepository.GetByIdAsync(course_id);
             if (course is null)
                 return new ServiceResult<string> { succeeded = false, Message = "The Course Not found" };
-            UpdateCourseProperties(course, courseUpdate);
+            var Course = mapper.Map<CourseBasicUpdateDto , Course>(courseUpdate , course);
+            // UpdateCourseProperties(course, courseUpdate);
+            await unitOfWork.CourseRepository.Update(Course);
             course.UpdatedAt = DateTime.UtcNow;
             await unitOfWork.SaveChanges();
             return new ServiceResult<string> { succeeded = true };
         }
-        private void UpdateCourseProperties(Course course, CourseBasicUpdateDto courseUpdate)
-        {
-            course.Title = courseUpdate.Title;
-            course.Description = courseUpdate.Description;
-            course.enrollmentCapacity = courseUpdate.EnrollmentCapacity;
-            course.courseStatus = courseUpdate.CourseStatus;
-            course.courseDurationInHours = courseUpdate.CourseDurationInHours;
-            course.imageUrl = courseUpdate.ImageUrl;
-            course.Is_paid = courseUpdate.Is_paid.HasValue ? courseUpdate.Is_paid.Value : course.Is_paid; // Use the existing value if null
-            course.price = courseUpdate.Price;
-            course.discount = courseUpdate.Discount;
-        }
+       
 
         }
 }

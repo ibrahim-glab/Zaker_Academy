@@ -16,12 +16,13 @@ namespace Zaker_Academy.core.Interfaces
         Task<ICollection<TType>> GetByCondition<TType>(Expression<Func<T, bool>> condition,Expression<Func<T, TType>> select , string[] relatedEntities = null) where TType : class;
 #pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
 
-        Task<IEnumerable<T>> GetPagedAsync(
+        Task<ICollection<TType>> GetPagedAsync<TType>(
     Expression<Func<T, bool>> condition,
+     Expression<Func<T, TType>> select,
     int pageNumber,
     int pageSize,
     Expression<Func<T, object>> orderBy,
-    bool ascending = true);
+    bool ascending = true) where TType : class;
 
         Task<bool> ExistsAsync(Expression<Func<T, bool>> condition);
 
