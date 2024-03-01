@@ -1,404 +1,705 @@
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\appsettings.Development.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\appsettings.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.exe
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.deps.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.runtimeconfig.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Core.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Identity.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Certificates.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Secrets.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Humanizer.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\JWT.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\MailKit.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Web.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.OpenApi.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\MimeKit.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Mono.TextTemplating.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Newtonsoft.Json.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.CodeDom.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Drawing.Common.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Memory.Data.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Runtime.Caching.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Permissions.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Windows.Extensions.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.AssemblyReference.cache
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.AssemblyInfoInputs.cache
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.AssemblyInfo.cs
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.CoreCompileInputs.cache
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.MvcApplicationPartsAssemblyInfo.cs
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.MvcApplicationPartsAssemblyInfo.cache
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.sourcelink.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.build.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.development.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.Zaker_Academy.Microsoft.AspNetCore.StaticWebAssets.props
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.build.Zaker_Academy.props
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Zaker_Academy.props
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Zaker_Academy.props
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.pack.json
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\scopedcss\bundle\Zaker_Academy.styles.css
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.CopyComplete
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\refint\Zaker_Academy.dll
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.pdb
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.genruntimeconfig.cache
-G:\web projects\Zaker-Academy\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Zaker_Academy.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\appsettings.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.exe
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.deps.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.runtimeconfig.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.pdb
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Identity.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Certificates.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Azure.Security.KeyVault.Secrets.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Humanizer.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\JWT.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\MailKit.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Identity.Web.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\MimeKit.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Runtime.Caching.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Security.Permissions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.core.pdb
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Zaker_Academy.Service.pdb
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.AssemblyReference.cache
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.AssemblyInfoInputs.cache
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.AssemblyInfo.cs
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.CoreCompileInputs.cache
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.sourcelink.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.Zaker_Academy.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.build.Zaker_Academy.props
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Zaker_Academy.props
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Zaker_Academy.props
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\scopedcss\bundle\Zaker_Academy.styles.css
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.csproj.CopyComplete
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\refint\Zaker_Academy.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.pdb
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\Zaker_Academy.genruntimeconfig.cache
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\obj\Debug\net7.0\ref\Zaker_Academy.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\SendGrid.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\StarkbankEcdsa.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Build.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Build.Framework.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Configuration.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Frameworks.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.LibraryModel.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Packaging.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.ProjectModel.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Protocol.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Composition.AttributedModel.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Composition.Convention.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Composition.Hosting.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Composition.Runtime.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Composition.TypedParts.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\af\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ar\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\az\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\bg\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\da\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\el\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fa\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\he\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\hr\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\hu\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\hy\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\id\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\is\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ku\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\lv\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\mt\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\nb\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\nl\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ro\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\sk\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\sl\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\sr\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\sv\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\uk\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\vi\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Client.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Bcl.TimeProvider.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.IO.Pipelines.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Text.Encodings.Web.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Text.Json.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\System.Threading.Channels.dll
-C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.Development.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.exe
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.deps.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.runtimeconfig.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.pdb
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Core.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Identity.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Certificates.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Secrets.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Humanizer.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/JWT.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MailKit.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Web.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.OpenApi.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MimeKit.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Mono.TextTemplating.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Newtonsoft.Json.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.CodeDom.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Drawing.Common.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Memory.Data.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Runtime.Caching.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Permissions.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Windows.Extensions.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.pdb
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.pdb
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.pdb
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.AssemblyReference.cache
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfoInputs.cache
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfo.cs
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CoreCompileInputs.cache
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cs
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cache
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.sourcelink.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.build.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.development.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.Zaker_Academy.Microsoft.AspNetCore.StaticWebAssets.props
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.build.Zaker_Academy.props
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Zaker_Academy.props
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Zaker_Academy.props
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.pack.json
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/scopedcss/bundle/Zaker_Academy.styles.css
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CopyComplete
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/refint/Zaker_Academy.dll
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.pdb
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.genruntimeconfig.cache
+G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/ref/Zaker_Academy.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.exe
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.deps.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.runtimeconfig.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.pdb
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Identity.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Certificates.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Secrets.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Humanizer.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/JWT.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MailKit.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Web.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.OpenApi.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MimeKit.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Memory.Data.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Runtime.Caching.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Permissions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Windows.Extensions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.pdb
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.pdb
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.pdb
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.AssemblyReference.cache
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfoInputs.cache
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfo.cs
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CoreCompileInputs.cache
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.sourcelink.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.Zaker_Academy.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.build.Zaker_Academy.props
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Zaker_Academy.props
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Zaker_Academy.props
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/scopedcss/bundle/Zaker_Academy.styles.css
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CopyComplete
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/refint/Zaker_Academy.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.pdb
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.genruntimeconfig.cache
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/ref/Zaker_Academy.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/SendGrid.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/StarkbankEcdsa.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Build.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Build.Framework.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.DiaSymReader.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.LibraryModel.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.ProjectModel.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Protocol.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.AttributedModel.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Convention.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Hosting.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Runtime.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.TypedParts.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/af/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ar/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/az/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/bg/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/bn-BD/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/da/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/el/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fa/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fi-FI/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr-BE/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/he/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hr/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hu/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hy/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/id/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/is/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko-KR/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ku/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/lv/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ms-MY/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/mt/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nb/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nb-NO/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nl/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ro/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sk/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sl/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sr/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sr-Latn/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sv/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/th-TH/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uk/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uz-Cyrl-UZ/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uz-Latn-UZ/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/vi/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-CN/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Humanizer.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Connections.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Client.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Common.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Bcl.TimeProvider.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.IO.Pipelines.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Text.Encodings.Web.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Text.Json.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Threading.Channels.dll
+C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.Development.json
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/appsettings.json
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.deps.json
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.runtimeconfig.json
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.pdb
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Identity.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Certificates.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Azure.Security.KeyVault.Secrets.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Humanizer.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/JWT.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MailKit.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Connections.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Client.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Bcl.TimeProvider.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Build.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Build.Framework.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.DiaSymReader.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Identity.Web.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/MimeKit.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Mono.TextTemplating.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Newtonsoft.Json.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Configuration.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Frameworks.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.LibraryModel.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Packaging.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.ProjectModel.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Protocol.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/NuGet.Versioning.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/SendGrid.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/StarkbankEcdsa.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.CodeDom.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.AttributedModel.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Convention.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Hosting.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.Runtime.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Composition.TypedParts.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Drawing.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.IO.Pipelines.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Memory.Data.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Runtime.Caching.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Security.Permissions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Text.Encodings.Web.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Text.Json.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Threading.Channels.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/System.Windows.Extensions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/af/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ar/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/az/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/bg/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/bn-BD/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/da/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/el/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fa/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fi-FI/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr-BE/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/he/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hr/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hu/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/hy/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/id/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/is/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko-KR/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ku/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/lv/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ms-MY/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/mt/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nb/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nb-NO/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/nl/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ro/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sk/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sl/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sr/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sr-Latn/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/sv/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/th-TH/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uk/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uz-Cyrl-UZ/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/uz-Latn-UZ/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/vi/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-CN/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Humanizer.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.dll
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.core.pdb
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.infrastructure.pdb
+/workspaces/Zaker_Academy/Zaker_Academy/bin/Debug/net7.0/Zaker_Academy.Service.pdb
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.AssemblyReference.cache
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfoInputs.cache
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.AssemblyInfo.cs
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CoreCompileInputs.cache
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cs
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.sourcelink.json
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.build.json
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.development.json
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.Zaker_Academy.Microsoft.AspNetCore.StaticWebAssets.props
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.build.Zaker_Academy.props
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Zaker_Academy.props
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Zaker_Academy.props
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/staticwebassets.pack.json
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/scopedcss/bundle/Zaker_Academy.styles.css
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.csproj.CopyComplete
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.dll
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/refint/Zaker_Academy.dll
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.pdb
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/Zaker_Academy.genruntimeconfig.cache
+/workspaces/Zaker_Academy/Zaker_Academy/obj/Debug/net7.0/ref/Zaker_Academy.dll
