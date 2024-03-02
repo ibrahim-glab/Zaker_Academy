@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 using Zaker_Academy.Service.Interfaces;
 using IAuthorizationService = Zaker_Academy.Service.Interfaces.IAuthorizationService;
+using System
 
 namespace Zaker_Academy.Controllers
 {
@@ -79,13 +79,18 @@ namespace Zaker_Academy.Controllers
         public async Task<IActionResult> VerifyEmail(string email, string token)
         {
 
-
-            if (email.IsNullOrEmpty() || token.IsNullOrEmpty())
+            // check for valid email and token
+      
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
             {
                 return BadRequest("Invalid Payload");
             }
+
+            //decode the token from the url
             string decodedCode = Uri.UnescapeDataString(token);
+            // call authorization service to verify email by async method
             var res = await authorizationService.VerifyEmailAsync(email, decodedCode);
+            // string decodedCode = Uri.UnescapeDataString(token);
             if (!res.succeeded)
                 return BadRequest(res);
             return Ok(new ServiceResult<string> { succeeded = true, Message = "Verification Succeeded , Now You can Login " });
