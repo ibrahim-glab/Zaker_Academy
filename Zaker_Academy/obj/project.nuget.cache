@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RNwJypTtirLIBFC19pAauOxeOCFfwunXVSGZ86urIvP0JVVUX3ok3f9091Kefe/5HQnS7Pxa72T765aLxXzOZg==",
+  "dgSpecHash": "bKJRsKi9BkdTBo6PaUG2Ujndje+6k69l8sOMyT1e2YxndjDoYoHRMWSBlS+uyBn9QBWgFKftS/2uwTJpeTeu5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
+  "projectFilePath": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy\\Zaker_Academy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bebo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Bebo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

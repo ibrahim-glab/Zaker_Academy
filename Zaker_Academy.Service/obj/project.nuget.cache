@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NYEAhTeir6HrEMdR5TGmUjAyWsg3XajHSbMBentiaBDWMDynLbha9YosnVUUevDXGOa0X4bHEvtTBCotpv3Z4A==",
+  "dgSpecHash": "SjgJb/dHKNACr3j/AWtOFJFeyS5zz6K1PFnP/jTtJaKsf1zEBURO7A6ms9U41jM7Scg9EKcynOHH4OtpkybcpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
+  "projectFilePath": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.Service\\Zaker_Academy.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bebo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Bebo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

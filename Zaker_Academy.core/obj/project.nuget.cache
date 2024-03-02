@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a9MAP9ode7yBJfxG5iYxE0MsIBnuScTrr2AjjbHvzKrBrMjeslkKYiXGOXXwbJ058ivL2tQqIaCgGlvzj5or9g==",
+  "dgSpecHash": "avlE2DnznZMJ8EdWFDSsspkVoCzYSbY0ISjfoJQIKNPGv0Gxdx5us83qwjDkmA81UKGfxO2+bYFB9Kn48gHj5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+  "projectFilePath": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bebo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.11\\microsoft.aspnetcore.cryptography.internal.7.0.11.nupkg.sha512",
     "C:\\Users\\Bebo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.11\\microsoft.aspnetcore.cryptography.keyderivation.7.0.11.nupkg.sha512",

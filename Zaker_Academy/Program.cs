@@ -67,6 +67,7 @@ builder.Services.AddServices();
 builder.Services.Services();
 
 var app = builder.Build();
+// Add services to the container.
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

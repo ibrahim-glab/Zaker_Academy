@@ -120,13 +120,16 @@ namespace Zaker_Academy.Controllers
             }
         }
 
+        // Post method to create a subcategory for a given id, with input parameters id and category, and returning an asynchronous task that yields an IActionResult.
         [HttpPost("{id}/subcategory")]
-        public async Task<IActionResult> Post(int id ,[FromBody] SubCategoryCreationDto category)
+        public async Task<IActionResult> Post(int id, [FromBody] SubCategoryCreationDto category)
         {
             if (category is null)
                 return BadRequest();
 
+
             if (!User.IsInRole("ADMIN"))
+
                 return Forbid();
             if (!Regex.IsMatch(category.Name, "^[A-Za-z&\\s]*$"))
             {
@@ -146,10 +149,11 @@ namespace Zaker_Academy.Controllers
         }
 
 
-        [HttpGet("{id}/subcategory" )]
+        // Retrieves all subcategories for a given category ID and returns the result as IActionResult.
+        [HttpGet("{id}/subcategory")]
         public async Task<IActionResult> GetAll(int id)
         {
-          
+
 
             try
             {
@@ -163,7 +167,15 @@ namespace Zaker_Academy.Controllers
                 return StatusCode(500);
             }
         }
-     
+        //step 1 : Add Httpendpoint for subcategory edit
+
+         
+        //step 2 : Add Httpendpoint for subcategory delete
+        //step 3 : Add Httpendpoint for subcategory get
+        //step 4 : Add Httpendpoint for subcategory post 
+
+
+
 
     }
 }
