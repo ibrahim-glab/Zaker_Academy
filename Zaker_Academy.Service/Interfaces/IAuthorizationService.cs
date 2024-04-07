@@ -1,4 +1,5 @@
-﻿using Zaker_Academy.Service.DTO_s;
+﻿using Zaker_Academy.infrastructure.Entities;
+using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 
 namespace Zaker_Academy.Service.Interfaces
@@ -9,7 +10,8 @@ namespace Zaker_Academy.Service.Interfaces
 
         Task<ServiceResult<string>> SendVerificationEmailAsync(string UserEmail, string callBackUrl);
 
-        Task<ServiceResult<string>> CreateEmailTokenAsync(string username);
+        Task<ServiceResult<string>> CreateEmailTokenAsync(applicationUser applicationUser);
+
 
         Task<ServiceResult<string>> CreatePasswordTokenAsync(string Email);
 

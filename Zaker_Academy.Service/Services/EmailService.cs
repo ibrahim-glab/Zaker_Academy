@@ -40,7 +40,7 @@ namespace Zaker_Academy.Service.Services
             }
             catch (Exception e)
             {
-                return new ServiceResult<string>() { Message = "Verification Email Process Failed ", Error = e.Message };
+                throw new Exception(message: e.Message);
             }
         }
     }

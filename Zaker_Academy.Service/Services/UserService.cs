@@ -58,7 +58,7 @@ namespace Zaker_Academy.Service.Services
             return serviceResult;
         }
 
-        public applicationUser MapUser(applicationUser applicationUser , UserDto userDto)
+        public applicationUser MapUser(applicationUser applicationUser, UserDto userDto)
         {
 
             applicationUser.PhoneNumber = userDto.PhoneNumber;
@@ -69,7 +69,7 @@ namespace Zaker_Academy.Service.Services
             applicationUser.imageURL = userDto.imageURL;
             return applicationUser;
         }
-        public async Task<ServiceResult<UserDto>> UpdateProfile(UserDto updateProfileDto , string id)
+        public async Task<ServiceResult<UserDto>> UpdateProfile(UserDto updateProfileDto, string id)
         {
             ServiceResult<UserDto> result = new ServiceResult<UserDto>();
 
@@ -98,71 +98,80 @@ namespace Zaker_Academy.Service.Services
             await _unitOfWork.SaveChanges();
             result.succeeded = true;
             result.Message = "Profile updated successfully";
-            result.Data = _mapper.Map<UserDto>(user) ;
+            result.Data = _mapper.Map<UserDto>(user);
             return result;
         }
 
+        // 1. Map User
+        // 2. Check if User Exist
+        // 3. Create User
+        // 4. add User To Role (Student or Teacher)
+        // 5. Send Email
+        // 4. Save Changes
+        /// <summary>
+        /// This code snippet is a method named Register that takes a UserCreationDto object and a callback URL as parameters. It registers a new user by mapping the UserCreationDto to an applicationUser, checking if the user already exists, creating the user with a password using userManager, assigning a role, generating and sending email verification, and handling transaction commits and rollbacks. It returns a ServiceResult<string> indicating the success or failure of the registration process along with an appropriate message.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="callbackUrl"></param>
+        /// <returns>Serivce</returns>
         public async Task<ServiceResult<string>> Register(UserCreationDto user, string callbackUrl)
         {
-            ServiceResult<string> serviceResult = new ServiceResult<string>();
             var User = _mapper.Map<applicationUser>(user);
-
-            if (await _userManager.FindByEmailAsync(user.Email) is not null)
-            {
-                serviceResult.Message = "Registration Failed";
-                serviceResult.Error = $"{user.Email} is already Register!";
-                return serviceResult;
-            }
-
-            if (await _userManager.FindByNameAsync(user.UserName) is not null)
-            {
-                serviceResult.Message = "Registration Failed";
-                serviceResult.Error = $"{user.UserName} is already Exist!";
-                return serviceResult;
-            }
-
+            var CheckResult = await CheckUserExistence(user.UserName, user.Email);
+            if (!CheckResult.succeeded)
+                return CheckResult;
             using var transaction = _unitOfWork.BeginTransaction();
             try
             {
+                // var result = await CreateUser(User, user.Password);
                 IdentityResult res = await _userManager.CreateAsync(User, user.Password);
-
                 if (!res.Succeeded)
-                {
-                    foreach (var err in res.Errors)
-                    {
-                        serviceResult.Error += $" {err.Description} , ";
-                    }
-                    throw new Exception(message: (string)serviceResult.Error!);
-                }
-                res  = await _userManager.AddToRoleAsync(User, user.Role);
+                    throw new Exception(message: ConstructErrorInUserIdentity(res));
+                res = await _userManager.AddToRoleAsync(User, user.Role);
                 if (!res.Succeeded)
-                    throw new Exception(message: (string)serviceResult.Error!);
+                    throw new Exception(message: ConstructErrorInUserIdentity(res));
 
-                var result = await _authorizationService.CreateEmailTokenAsync(User.UserName!);
-
-                if (!result.succeeded)
-                    throw new Exception(message: "Somthing Happend");
-
-                var token = Uri.EscapeDataString(result.Data.ToString());
-                callbackUrl += $"&token={token}";
-
-                result = await _authorizationService.SendVerificationEmailAsync(User.Email!, callbackUrl);
-
-                if (!result.succeeded)
-                    throw new Exception(message: "Somthing Happend");
-
-                serviceResult.succeeded = true;
-                serviceResult.Message = "Registration Succeeded";
+                var result = await _authorizationService.CreateEmailTokenAsync(User);
+                var Url = ConstructUrl(token: result.Data, callbackUrl);
+                result = await _authorizationService.SendVerificationEmailAsync(User.Email!, Url);
+                
+                result.succeeded = true;
+                result.Message = "Registration Succeeded! Please Verify Your Email";
                 transaction.Commit();
-                return serviceResult;
+                return new ServiceResult<string> { succeeded = true, Message = "Registration Succeeded! Please Verify Your Email" };
             }
             catch (Exception e)
             {
                 transaction.Rollback();
-                serviceResult.Message = e.Message;
-                serviceResult.Error = "Internal Server Error";
-                return serviceResult;
+                return new ServiceResult<string> { succeeded = false, Message = "Registration Failed", Error = e.Message };
             }
+        }
+        private async Task<ServiceResult<string>> CheckUserExistence(string userName, string email)
+        {
+            if (await _userManager.FindByNameAsync(userName) != null)
+                return new ServiceResult<string> { Message = $"{userName} already exist" };
+            else if (await _userManager.FindByEmailAsync(email) != null)
+                return new ServiceResult<string> { Message = $"{email} already exist" };
+
+            return new ServiceResult<string> { succeeded = true };
+        }
+
+
+        private string ConstructUrl(string token, string callBackUrl)
+        {
+
+            string EncodedToken = Uri.EscapeDataString(token.ToString());
+            return callBackUrl + $"&token={EncodedToken}";
+            ;
+        }
+        private string ConstructErrorInUserIdentity(IdentityResult res)
+        {
+            string error = string.Empty;
+            foreach (var err in res.Errors)
+            {
+                error += $" {err.Description} , ";
+            }
+            return error;
         }
 
         public async Task<ServiceResult<UserDto>> GetUser(string id)
@@ -172,7 +181,7 @@ namespace Zaker_Academy.Service.Services
             if (user == null)
                 return null;
 
-            return new ServiceResult<UserDto> {succeeded = true , Data = _mapper.Map<UserDto>(user) };
+            return new ServiceResult<UserDto> { succeeded = true, Data = _mapper.Map<UserDto>(user) };
         }
 
 
