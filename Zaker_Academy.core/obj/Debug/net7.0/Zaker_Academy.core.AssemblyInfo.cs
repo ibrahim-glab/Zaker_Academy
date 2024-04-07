@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zaker_Academy.core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb613cffd245d63dde22a8c852d54db51ae4f44b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3a9a9d52b67e8ca6ae49df03da7397732c05b8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zaker_Academy.core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zaker_Academy.core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

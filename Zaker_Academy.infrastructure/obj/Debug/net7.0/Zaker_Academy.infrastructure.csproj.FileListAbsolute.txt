@@ -16,24 +16,6 @@ G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.infrastructure/obj/Deb
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.pdb
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.genruntimeconfig.cache
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/ref/Zaker_Academy.infrastructure.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.deps.json
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.runtimeconfig.json
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.core.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.core.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.csproj.AssemblyReference.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.AssemblyInfoInputs.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.AssemblyInfo.cs
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.csproj.CoreCompileInputs.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.sourcelink.json
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.csproj.CopyComplete
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/refint/Zaker_Academy.infrastructure.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.genruntimeconfig.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/ref/Zaker_Academy.infrastructure.dll
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.deps.json
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.runtimeconfig.json
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
@@ -52,3 +34,21 @@ C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.pdb
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/Zaker_Academy.infrastructure.genruntimeconfig.cache
 /workspaces/Zaker_Academy/Zaker_Academy.infrastructure/obj/Debug/net7.0/ref/Zaker_Academy.infrastructure.dll
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.deps.json
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.runtimeconfig.json
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.core.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\bin\Debug\net7.0\Zaker_Academy.core.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.AssemblyReference.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.AssemblyInfoInputs.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.AssemblyInfo.cs
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.CoreCompileInputs.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.sourcelink.json
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.csproj.CopyComplete
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\refint\Zaker_Academy.infrastructure.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\Zaker_Academy.infrastructure.genruntimeconfig.cache
+C:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.infrastructure\obj\Debug\net7.0\ref\Zaker_Academy.infrastructure.dll

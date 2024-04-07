@@ -16,24 +16,6 @@ G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/refint/Zaker_Academy.Service.dll
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.pdb
 G:/web projects/Zaker-Academy/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/ref/Zaker_Academy.Service.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.deps.json
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.core.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.infrastructure.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.core.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.infrastructure.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.csproj.AssemblyReference.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.AssemblyInfoInputs.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.AssemblyInfo.cs
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.csproj.CoreCompileInputs.cache
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.sourcelink.json
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.csproj.CopyComplete
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/refint/Zaker_Academy.Service.dll
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.pdb
-C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/ref/Zaker_Academy.Service.dll
 /workspaces/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.deps.json
 /workspaces/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.dll
 /workspaces/Zaker_Academy/Zaker_Academy.Service/bin/Debug/net7.0/Zaker_Academy.Service.pdb
@@ -52,3 +34,21 @@ C:/Users/Bebo/source/repos/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/
 /workspaces/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/refint/Zaker_Academy.Service.dll
 /workspaces/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/Zaker_Academy.Service.pdb
 /workspaces/Zaker_Academy/Zaker_Academy.Service/obj/Debug/net7.0/ref/Zaker_Academy.Service.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.Service.deps.json
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.Service.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.Service.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.core.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.infrastructure.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.core.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\bin\Debug\net7.0\Zaker_Academy.infrastructure.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.csproj.AssemblyReference.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.AssemblyInfoInputs.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.AssemblyInfo.cs
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.csproj.CoreCompileInputs.cache
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.sourcelink.json
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.csproj.CopyComplete
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\refint\Zaker_Academy.Service.dll
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\Zaker_Academy.Service.pdb
+c:\Users\Bebo\source\repos\Zaker_Academy\Zaker_Academy.Service\obj\Debug\net7.0\ref\Zaker_Academy.Service.dll

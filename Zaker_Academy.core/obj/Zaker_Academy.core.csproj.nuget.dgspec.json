@@ -1,39 +1,27 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {}
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
+    "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "projectUniqueName": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
         "projectName": "Zaker_Academy.core",
-        "projectPath": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
+        "projectPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\Zaker_Academy.core.csproj",
         "packagesPath": "C:\\Users\\Bebo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
-=======
-    "/workspaces/Zaker_Academy/Zaker_Academy.core/Zaker_Academy.core.csproj": {}
-  },
-  "projects": {
-    "/workspaces/Zaker_Academy/Zaker_Academy.core/Zaker_Academy.core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/workspaces/Zaker_Academy/Zaker_Academy.core/Zaker_Academy.core.csproj",
-        "projectName": "Zaker_Academy.core",
-        "projectPath": "/workspaces/Zaker_Academy/Zaker_Academy.core/Zaker_Academy.core.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Zaker_Academy/Zaker_Academy.core/obj/",
->>>>>>> f9e143e0de9623fb6602862a7733b99d159cace4
+        "outputPath": "C:\\Users\\Bebo\\source\\repos\\Zaker_Academy\\Zaker_Academy.core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,22 +56,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

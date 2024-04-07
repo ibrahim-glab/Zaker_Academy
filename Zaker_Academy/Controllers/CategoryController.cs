@@ -120,7 +120,6 @@ namespace Zaker_Academy.Controllers
             }
         }
 
-        // Post method to create a subcategory for a given id, with input parameters id and category, and returning an asynchronous task that yields an IActionResult.
         [HttpPost("{id}/subcategory")]
         public async Task<IActionResult> Post(int id, [FromBody] SubCategoryCreationDto category)
         {
@@ -168,8 +167,7 @@ namespace Zaker_Academy.Controllers
             }
         }
         //step 1 : Add Httpendpoint for subcategory edit
-
-         
+        
         //step 2 : Add Httpendpoint for subcategory delete
         //step 3 : Add Httpendpoint for subcategory get
         //step 4 : Add Httpendpoint for subcategory post 

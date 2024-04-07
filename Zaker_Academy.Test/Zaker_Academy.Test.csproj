@@ -26,6 +26,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Zaker_Academy.core\Zaker_Academy.core.csproj" />
     <ProjectReference Include="..\Zaker_Academy.Service\Zaker_Academy.Service.csproj" />
+    <ProjectReference Include="..\Zaker_Academy\Zaker_Academy.csproj" />
   </ItemGroup>
 
 </Project>

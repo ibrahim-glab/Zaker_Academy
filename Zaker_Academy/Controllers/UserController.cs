@@ -5,7 +5,6 @@ using Zaker_Academy.Service.DTO_s;
 using Zaker_Academy.Service.ErrorHandling;
 using Zaker_Academy.Service.Interfaces;
 using IAuthorizationService = Zaker_Academy.Service.Interfaces.IAuthorizationService;
-using System
 
 namespace Zaker_Academy.Controllers
 {
@@ -109,7 +108,7 @@ namespace Zaker_Academy.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if (email.IsNullOrEmpty())
+            if (String.IsNullOrEmpty(email))
             {
                 return BadRequest("Invalid Payload");
             }
@@ -139,6 +138,8 @@ namespace Zaker_Academy.Controllers
                 return BadRequest(res);
             return Ok(res);
         }
+
+       
         [Authorize]
         [HttpPut]
         public async Task<IActionResult> Put([FromBody] UserDto updateProfileDto)
